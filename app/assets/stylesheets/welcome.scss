@@ -1,3 +1,20 @@
 // Place all the styles related to the Welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.baltimore-map {
+	height: 400px;
+    width: 800px;
+    margin: auto;
+}
+
+.center-button {
+	background-color: white;
+	margin: 10px;
+	cursor: pointer;
+	padding: 10px;
+	&:hover {
+		background-color: #D3D3D3;
+	}
+}
+
