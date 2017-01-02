@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="myApp">
 <head>
+  <%= include_gon %>
 
 	<meta name="viewport" content="initial-scale=1.0" />
 
@@ -24,15 +25,18 @@
     </custom-control>
   </ng-map>
   </div>
-
+  <h1><%= @first %></h1>
   <p><%= @count %></p>
-  <% @addresses.each do |address| %>
-    <p><%= address %></p>
+  <% @pairs.each do |pair| %>
+    <p><%= pair %></p>
   <% end %>
+
 
   <div ng-app="ngMap">
 
     <div ng-repeat="dir in directions">
+    <h1>Distance: {{map.directionsRenderers[0].directions.routes[0].legs[0].distance.text}}</h1>
+
       <div style="width: 68%; float:left; height:450px">
         <ng-map style="height:100%" >
           <directions
@@ -47,7 +51,8 @@
       <div id="{{dir.panelName}}" style="width: 32%; float:left; height:450px"></div>
 
 
-      <h1>{{map.directionsRenderers[0].directions.routes[0].legs[0].distance.text}}</h1>
+
+      
     </div>
 
   </div>
