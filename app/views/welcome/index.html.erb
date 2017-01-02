@@ -25,13 +25,37 @@
   </ng-map>
   </div>
 
+  <p><%= @count %></p>
   <% @addresses.each do |address| %>
     <p><%= address %></p>
   <% end %>
 
+  <div ng-app="ngMap">
+
+    <div ng-repeat="dir in directions">
+      <div style="width: 68%; float:left; height:450px">
+        <ng-map style="height:100%" >
+          <directions
+            draggable="false"
+            travel-mode="DRIVING"
+            panel="{{dir.panelName}}"
+            origin="{{dir.origin}}"
+            destination="{{dir.destination}}">
+          </directions>
+        </ng-map>
+      </div>
+      <div id="{{dir.panelName}}" style="width: 32%; float:left; height:450px"></div>
+
+
+      <h1>{{map.directionsRenderers[0].directions.routes[0].legs[0].distance.text}}</h1>
+    </div>
+
+  </div>
+
 </body>
 
 </html>
+
 
 
 

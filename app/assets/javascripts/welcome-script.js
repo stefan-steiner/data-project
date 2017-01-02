@@ -10,3 +10,12 @@ app.controller('CustomControlCtrl', function(NgMap) {
     vm.map.setZoom(13);
   };
 });
+
+angular.module('ngMap').run(function($rootScope) {
+    $rootScope.directions = [
+        {origin:"Palo Alto", destination:"Gilroy", panelName:"p1"},
+        {origin:"San Jose", destination:"Mountain View", panelName:"p2"}
+    ];
+});
+
+
