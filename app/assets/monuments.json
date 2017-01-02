@@ -1,0 +1,561 @@
+{
+  "meta" : {
+    "view" : {
+      "id" : "bdhi-3ixm",
+      "name" : "landmark_designated",
+      "averageRating" : 0,
+      "createdAt" : 1350932789,
+      "displayType" : "geoRows",
+      "downloadCount" : 108,
+      "hideFromCatalog" : false,
+      "hideFromDataJson" : false,
+      "indexUpdatedAt" : 1461183977,
+      "newBackend" : true,
+      "numberOfComments" : 0,
+      "oid" : 15567538,
+      "provenance" : "official",
+      "publicationAppendEnabled" : false,
+      "publicationGroup" : 6143590,
+      "publicationStage" : "published",
+      "tableId" : 6143590,
+      "totalTimesRated" : 0,
+      "viewCount" : 115,
+      "viewLastModified" : 1472433443,
+      "viewType" : "tabular",
+      "childViews" : [ "" ],
+      "columns" : [ {
+        "id" : -1,
+        "name" : "sid",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":sid",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "id",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":id",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "position",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":position",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : 234363883,
+        "name" : "ID",
+        "dataTypeName" : "number",
+        "fieldName" : "id",
+        "position" : 1,
+        "renderTypeName" : "number",
+        "tableColumnId" : 33363040,
+        "format" : { }
+      }, {
+        "id" : 234363878,
+        "name" : "the_geom",
+        "dataTypeName" : "point",
+        "fieldName" : "the_geom",
+        "position" : 1,
+        "renderTypeName" : "point",
+        "tableColumnId" : 33363035,
+        "format" : { }
+      }, {
+        "id" : 234363888,
+        "name" : "Address",
+        "dataTypeName" : "text",
+        "fieldName" : "address",
+        "position" : 2,
+        "renderTypeName" : "text",
+        "tableColumnId" : 33363045,
+        "format" : { }
+      }, {
+        "id" : 234363893,
+        "name" : "downtown",
+        "dataTypeName" : "text",
+        "fieldName" : "downtown",
+        "position" : 3,
+        "renderTypeName" : "text",
+        "tableColumnId" : 33363050,
+        "format" : { }
+      }, {
+        "id" : 234363898,
+        "name" : "SRCID_T",
+        "dataTypeName" : "text",
+        "fieldName" : "srcid_t",
+        "position" : 4,
+        "renderTypeName" : "text",
+        "tableColumnId" : 33363055,
+        "format" : { }
+      }, {
+        "id" : 234363903,
+        "name" : "SRCID_I",
+        "dataTypeName" : "number",
+        "fieldName" : "srcid_i",
+        "position" : 5,
+        "renderTypeName" : "number",
+        "tableColumnId" : 33363060,
+        "format" : { }
+      }, {
+        "id" : 234363908,
+        "name" : "EDIT_DATE",
+        "dataTypeName" : "date",
+        "fieldName" : "edit_date",
+        "position" : 6,
+        "renderTypeName" : "date",
+        "tableColumnId" : 33363065,
+        "format" : { }
+      }, {
+        "id" : 234363912,
+        "name" : "FTYPE",
+        "dataTypeName" : "number",
+        "fieldName" : "ftype",
+        "position" : 7,
+        "renderTypeName" : "number",
+        "tableColumnId" : 33363069,
+        "format" : { }
+      }, {
+        "id" : 234363916,
+        "name" : "SUBTYPE",
+        "dataTypeName" : "text",
+        "fieldName" : "subtype",
+        "position" : 8,
+        "renderTypeName" : "text",
+        "tableColumnId" : 33363073,
+        "format" : { }
+      }, {
+        "id" : 234363922,
+        "name" : "LOC_TYPE",
+        "dataTypeName" : "text",
+        "fieldName" : "loc_type",
+        "position" : 9,
+        "renderTypeName" : "text",
+        "tableColumnId" : 33363079,
+        "format" : { }
+      }, {
+        "id" : 234363926,
+        "name" : "LOC_METH",
+        "dataTypeName" : "text",
+        "fieldName" : "loc_meth",
+        "position" : 10,
+        "renderTypeName" : "text",
+        "tableColumnId" : 33363083,
+        "format" : { }
+      }, {
+        "id" : 234363931,
+        "name" : "STREET_TAG",
+        "dataTypeName" : "text",
+        "fieldName" : "street_tag",
+        "position" : 11,
+        "renderTypeName" : "text",
+        "tableColumnId" : 33363088,
+        "format" : { }
+      }, {
+        "id" : 234363935,
+        "name" : "CITY",
+        "dataTypeName" : "text",
+        "fieldName" : "city",
+        "position" : 12,
+        "renderTypeName" : "text",
+        "tableColumnId" : 33363092,
+        "format" : { }
+      }, {
+        "id" : 234363939,
+        "name" : "STATE",
+        "dataTypeName" : "text",
+        "fieldName" : "state",
+        "position" : 13,
+        "renderTypeName" : "text",
+        "tableColumnId" : 33363097,
+        "format" : { }
+      }, {
+        "id" : 234363943,
+        "name" : "ZIPCODE",
+        "dataTypeName" : "text",
+        "fieldName" : "zipcode",
+        "position" : 14,
+        "renderTypeName" : "text",
+        "tableColumnId" : 33363100,
+        "format" : { }
+      }, {
+        "id" : 234363949,
+        "name" : "X_COORD",
+        "dataTypeName" : "number",
+        "fieldName" : "x_coord",
+        "position" : 15,
+        "renderTypeName" : "number",
+        "tableColumnId" : 33363106,
+        "format" : { }
+      }, {
+        "id" : 234363952,
+        "name" : "Y_COORD",
+        "dataTypeName" : "number",
+        "fieldName" : "y_coord",
+        "position" : 16,
+        "renderTypeName" : "number",
+        "tableColumnId" : 33363109,
+        "format" : { }
+      }, {
+        "id" : 234363956,
+        "name" : "ALIAS1",
+        "dataTypeName" : "text",
+        "fieldName" : "alias1",
+        "position" : 17,
+        "renderTypeName" : "text",
+        "tableColumnId" : 33363113,
+        "format" : { }
+      }, {
+        "id" : 234363961,
+        "name" : "NGHBRHD",
+        "dataTypeName" : "text",
+        "fieldName" : "nghbrhd",
+        "position" : 18,
+        "renderTypeName" : "text",
+        "tableColumnId" : 33363118,
+        "format" : { }
+      }, {
+        "id" : 234363965,
+        "name" : "CNCLDST",
+        "dataTypeName" : "text",
+        "fieldName" : "cncldst",
+        "position" : 19,
+        "renderTypeName" : "text",
+        "tableColumnId" : 33363122,
+        "format" : { }
+      }, {
+        "id" : 234363968,
+        "name" : "STFID_BLK",
+        "dataTypeName" : "text",
+        "fieldName" : "stfid_blk",
+        "position" : 20,
+        "renderTypeName" : "text",
+        "tableColumnId" : 33363125,
+        "format" : { }
+      }, {
+        "id" : 234363972,
+        "name" : "PLCDST_NO",
+        "dataTypeName" : "number",
+        "fieldName" : "plcdst_no",
+        "position" : 21,
+        "renderTypeName" : "number",
+        "tableColumnId" : 33363129,
+        "format" : { }
+      }, {
+        "id" : 234363979,
+        "name" : "PLCDST",
+        "dataTypeName" : "text",
+        "fieldName" : "plcdst",
+        "position" : 22,
+        "renderTypeName" : "text",
+        "tableColumnId" : 33363136,
+        "format" : { }
+      }, {
+        "id" : 234363984,
+        "name" : "USNG",
+        "dataTypeName" : "text",
+        "fieldName" : "usng",
+        "position" : 23,
+        "renderTypeName" : "text",
+        "tableColumnId" : 33363141,
+        "format" : { }
+      }, {
+        "id" : 234363987,
+        "name" : "CNTCT_NME",
+        "dataTypeName" : "text",
+        "fieldName" : "cntct_nme",
+        "position" : 24,
+        "renderTypeName" : "text",
+        "tableColumnId" : 33363144,
+        "format" : { }
+      }, {
+        "id" : 234363990,
+        "name" : "CNTCT_PHN",
+        "dataTypeName" : "text",
+        "fieldName" : "cntct_phn",
+        "position" : 25,
+        "renderTypeName" : "text",
+        "tableColumnId" : 33363147,
+        "format" : { }
+      }, {
+        "id" : 234363992,
+        "name" : "CNTCT_DPT",
+        "dataTypeName" : "text",
+        "fieldName" : "cntct_dpt",
+        "position" : 26,
+        "renderTypeName" : "text",
+        "tableColumnId" : 33363149,
+        "format" : { }
+      }, {
+        "id" : 234363994,
+        "name" : "NAME",
+        "dataTypeName" : "text",
+        "fieldName" : "name",
+        "position" : 27,
+        "renderTypeName" : "text",
+        "tableColumnId" : 33363151,
+        "format" : { }
+      }, {
+        "id" : 234363998,
+        "name" : "GIS_ID",
+        "dataTypeName" : "text",
+        "fieldName" : "gis_id",
+        "position" : 28,
+        "renderTypeName" : "text",
+        "tableColumnId" : 33363155,
+        "format" : { }
+      } ],
+      "grants" : [ {
+        "inherited" : false,
+        "type" : "viewer",
+        "flags" : [ "public" ]
+      } ],
+      "metadata" : {
+        "geo" : {
+          "isNbe" : true,
+          "parentUid" : "6h89-p65s"
+        }
+      },
+      "owner" : {
+        "id" : "6r9a-dfdj",
+        "displayName" : "Open Baltimore",
+        "roleName" : "administrator",
+        "screenName" : "Open Baltimore",
+        "rights" : [ "create_datasets", "edit_others_datasets", "edit_sdp", "edit_site_theme", "moderate_comments", "manage_users", "chown_datasets", "edit_nominations", "approve_nominations", "feature_items", "federations", "manage_stories", "manage_approval", "change_configurations", "view_domain", "view_others_datasets", "edit_pages", "create_pages", "view_goals", "view_dashboards", "edit_goals", "edit_dashboards", "create_dashboards", "manage_provenance", "create_story", "edit_story_title_desc", "create_story_copy", "delete_story", "manage_story_collaborators", "manage_story_visibility", "manage_story_public_version", "edit_story", "view_unpublished_story", "view_story", "view_all_dataset_status_logs", "use_data_connectors" ]
+      },
+      "query" : { },
+      "rights" : [ "read" ],
+      "tableAuthor" : {
+        "id" : "6r9a-dfdj",
+        "displayName" : "Open Baltimore",
+        "roleName" : "administrator",
+        "screenName" : "Open Baltimore",
+        "rights" : [ "create_datasets", "edit_others_datasets", "edit_sdp", "edit_site_theme", "moderate_comments", "manage_users", "chown_datasets", "edit_nominations", "approve_nominations", "feature_items", "federations", "manage_stories", "manage_approval", "change_configurations", "view_domain", "view_others_datasets", "edit_pages", "create_pages", "view_goals", "view_dashboards", "edit_goals", "edit_dashboards", "create_dashboards", "manage_provenance", "create_story", "edit_story_title_desc", "create_story_copy", "delete_story", "manage_story_collaborators", "manage_story_visibility", "manage_story_public_version", "edit_story", "view_unpublished_story", "view_story", "view_all_dataset_status_logs", "use_data_connectors" ]
+      },
+      "flags" : [ "default" ]
+    }
+  },
+  "data" : [ [ "row-zge6-a5qf-qrju", "00000000-0000-0000-4FA3-47548E46C873", 0, 1450404466, null, 1450404466, null, "{ }", "1", "POINT (-76.61061998289733 39.290813007095956)", "100 N. Holliday Street", "Y", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21202", "1422540.36753", "591738.229177", "Designated Landmarks", "Downtown", "11", "24510401001043", "1", "CENTRAL", "18S UJ 61103 50286", "Jamie Gerhart", "4103964106", "Department of Planning", "City Hall", "38_1" ]
+, [ "row-d2jz_fssm_84b8", "00000000-0000-0000-B834-D116FAF3AAEF", 0, 1450404466, null, 1450404466, null, "{ }", "2", "POINT (-76.61727739758373 39.28448750170841)", "112 W. Conway Street", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21201", "1420665.77614", "589426.326648", "Designated Landmarks", "Inner Harbor", "11", "245102201002007", "1", "CENTRAL", "18S UJ 60516 49594", "Jamie Gerhart", "4103964106", "Department of Planning", "Otterbein Church", "38_2" ]
+, [ "row-jj62-47gv_atz6", "00000000-0000-0000-1F4F-60E3D64DA822", 0, 1450404466, null, 1450404466, null, "{ }", "3", "POINT (-76.60114787537181 39.291193636635775)", "1120 E. Baltimore Street", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21202", "1425220.65515", "591888.439834", "Designated Landmarks", "Jonestown", "12", "24510302001013", "2", "SOUTHEASTERN", "18S UJ 61920 50313", "Jamie Gerhart", "4103964106", "Department of Planning", "McKim Free School", "38_3" ]
+, [ "row-kb2f~asst-42ve", "00000000-0000-0000-A94E-C48C66B5A247", 0, 1450404466, null, 1450404466, null, "{ }", "4", "POINT (-76.61579757696029 39.29535250152036)", "2-12 West Franklin Street", "Y", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21201", "1421067.99253", "593385.439137", "Designated Landmarks", "Mount Vernon", "11", "245101102002023", "1", "CENTRAL", "18S UJ 60665 50797", "Jamie Gerhart", "4103964106", "Department of Planning", "First Unitarian Church", "38_4" ]
+, [ "row-zvas-qhsm.baem", "00000000-0000-0000-EE17-6473668565CF", 0, 1450404466, null, 1450404466, null, "{ }", "5", "POINT (-76.61528964573073 39.280061804488476)", "18,20-30 W. Montgomery Street", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21230", "1421235.21365", "587816.726193", "Designated Landmarks", "Federal Hill", "11", "245102201004009", "9", "SOUTHERN", "18S UJ 60679 49100", "Jamie Gerhart", "4103964106", "Department of Planning", "Ebenezer A.M.E. Church", "38_5" ]
+, [ "row-hpy5~5syi-yjbv", "00000000-0000-0000-222C-DAD8F61DD3E7", 0, 1450404466, null, 1450404466, null, "{ }", "6", "POINT (-76.6100099476187 39.29185654001292)", "225 N. Holliday Street", "Y", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21202", "1422711.4023", "592119.051578", "Designated Landmarks", "Downtown", "11", "24510401001026", "1", "CENTRAL", "18S UJ 61157 50401", "Jamie Gerhart", "4103964106", "Department of Planning", "Municipal Museum of Balt (Peale Museum)", "38_6" ]
+, [ "row-t4qu-ic39.nd5d", "00000000-0000-0000-90A3-51168F54885F", 0, 1450404466, null, 1450404466, null, "{ }", "8", "POINT (-76.61566144589483 39.31455360501838)", "2200 St. Paul Street", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21218", "1421077.07486", "600379.240766", "Designated Landmarks", "Charles Village", "12", "245101206003000", "5", "NORTHERN", "18S UJ 60715 52928", "Jamie Gerhart", "4103964106", "Department of Planning", "Lovely Lane Methodist Church (First Methodist)", "38_7" ]
+, [ "row-em8m.4cd4-2ysu", "00000000-0000-0000-9287-5060D9B6D417", 0, 1450404466, null, 1450404466, null, "{ }", "9", "POINT (-76.60119460993836 39.290494033131246)", "11 Lloyd Street", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21202", "1425208.54133", "591633.566", "Designated Landmarks", "Jonestown", "12", "24510302001014", "2", "SOUTHEASTERN", "18S UJ 61915 50236", "Jamie Gerhart", "4103964106", "Department of Planning", "Lloyd Street Synagogue", "38_8" ]
+, [ "row-hfxc_mbhx.k9mh", "00000000-0000-0000-BBAA-58D287CEF960", 0, 1450404466, null, 1450404466, null, "{ }", "10", "POINT (-76.62897573537067 39.301903131653376)", "1300 Druid Hill Avenue", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21217", "1417328.71293", "595755.952112", "Designated Landmarks", "Upton", "11", "245101702001007", "1", "CENTRAL", "18S UJ 59542 51545", "Jamie Gerhart", "4103964106", "Department of Planning", "Bethel A.M.E. Church", "38_9" ]
+, [ "row-vf9m.d2um_h7r7", "00000000-0000-0000-7C8F-4796CAD3ABD3", 0, 1450404466, null, 1450404466, null, "{ }", "11", "POINT (-76.62459503034705 39.3030703795123)", "313 Dolphin Street", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21217", "1418566.64418", "596186.168115", "Designated Landmarks", "Madison Park", "11", "245101401002012", "1", "CENTRAL", "18S UJ 59922 51668", "Jamie Gerhart", "4103964106", "Department of Planning", "Eutaw Place Baptist Church", "38_10" ]
+, [ "row-qzcb-t376~a83i", "00000000-0000-0000-0668-0C04C51FD686", 0, 1450404466, null, 1450404466, null, "{ }", "12", "POINT (-76.60151036961676 39.29455064942173)", "249 Aisquith Street", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21202", "1425112.72164", "593110.714949", "Designated Landmarks", "Pleasant View Gardens", "12", "24510501003001", "2", "SOUTHEASTERN", "18S UJ 61896 50687", "Jamie Gerhart", "4103964106", "Department of Planning", "Eastern Female High School", "38_11" ]
+, [ "row-ceab-hrin_qapy", "00000000-0000-0000-8066-4418B0101454", 0, 1450404466, null, 1450404466, null, "{ }", "13", "POINT (-76.61548724692639 39.302204833753486)", "1 East Chase Street", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21201", "1421145.307", "595881.6369", "Designated Landmarks", "Mid-Town Belvedere", "11", "245101102001030", "1", "CENTRAL", "18S UJ 60705 51557", "Jamie Gerhart", "4103964106", "Department of Planning", "Belvedere Hotel", "38_12" ]
+, [ "row-yptc_2g5k~jkmy", "00000000-0000-0000-65DD-4513DAEDB5EC", 0, 1450404466, null, 1450404466, null, "{ }", "14", "POINT (-76.61239399219644 39.29066444889588)", "Calvert St. near Fayette Street", "Y", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21202", "1422038.49879", "591681.983226", "Designated Landmarks", "Downtown", "11", "24510401001035", "1", "CENTRAL", "18S UJ 60949 50272", "Jamie Gerhart", "4103964106", "Department of Planning", "Battle Monument", "38_13" ]
+, [ "row-r4j2.a3y5~wxa2", "00000000-0000-0000-C984-DF35BE31DB64", 0, 1450404466, null, 1450404466, null, "{ }", "15", "POINT (-76.61493461262833 39.29206687379414)", "233 N. Charles Street", "Y", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21201", "1421317.26991", "592189.744678", "Designated Landmarks", "Downtown", "11", "24510401001033", "1", "CENTRAL", "18S UJ 60733 50431", "Jamie Gerhart", "4103964106", "Department of Planning", "St. Paul's P.E. Church", "38_14" ]
+, [ "row-3p6d-qdi5-vx45", "00000000-0000-0000-84FB-75CAA3A8B09A", 0, 1450404466, null, 1450404466, null, "{ }", "16", "POINT (-76.6163716011441 39.29326809554396)", "24 W. Saratoga Street", "Y", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21201", "1420908.7271", "592625.552861", "Designated Landmarks", "Downtown", "11", "24510401002019", "1", "CENTRAL", "18S UJ 60611 50567", "Jamie Gerhart", "4103964106", "Department of Planning", "St.Paul's P.E. Church Rectory", "38_15" ]
+, [ "row-ha69.2357~bygu", "00000000-0000-0000-59F8-2925D8500F4C", 0, 1450404466, null, 1450404466, null, "{ }", "17", "POINT (-76.65233777024143 39.35316230929968)", "4915 Greenspring Ave", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21209", "1410646.46842", "614400.274732", "Designated Landmarks", "Coldspring", "6", "245101308051001", "5", "NORTHERN", "18S UJ 57631 57270", "Jamie Gerhart", "4103964106", "Department of Planning", "Cylburn House and Park", "38_16" ]
+, [ "row-3ii6~68nt_74gh", "00000000-0000-0000-7A60-020ADA5A7711", 0, 1450404466, null, 1450404466, null, "{ }", "18", "POINT (-76.62327361050035 39.28717121951067)", "522 W. Lombard Street", "Y", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21201", "1418964.47967", "590396.754826", "Designated Landmarks", "Inner Harbor", "11", "24510402002017", "1", "CENTRAL", "18S UJ 60004 49901", "Jamie Gerhart", "4103964106", "Department of Planning", "Davidge Hall", "38_17" ]
+, [ "row-9drc~gadg_hic9", "00000000-0000-0000-D460-10E81E462936", 0, 1450404466, null, 1450404466, null, "{ }", "19", "POINT (-76.63260614636245 39.28541077061035)", "Pratt and Poppleton Streets", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21223", "1416325.53154", "589744.78172", "Designated Landmarks", "Washington Village", "9", "245102102001002", "9", "SOUTHERN", "18S UJ 59196 49720", "Jamie Gerhart", "4103964106", "Department of Planning", "Mt.Clare Station & Roundhouse", "38_18" ]
+, [ "row-zdy9_4xdg-ki63", "00000000-0000-0000-B875-CC1B76CE0631", 0, 1450404466, null, 1450404466, null, "{ }", "20", "POINT (-76.62080019514168 39.34899814041262)", "4545 N. Charles Street", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21210", "1419571.02472", "612919.037865", "Designated Landmarks", "Loyola/Notre Dame", "4", "245102711011001", "5", "NORTHERN", "18S UJ 60340 56759", "Jamie Gerhart", "4103964106", "Department of Planning", "Evergreen House", "38_19" ]
+, [ "row-sb9w-t2vx~5wdy", "00000000-0000-0000-AC4A-4F6C1BAAFA3A", 0, 1450404466, null, 1450404466, null, "{ }", "21", "POINT (-76.61158814101925 39.2908004573807)", "111 N. Calvert Street", "Y", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21202", "1422266.36907", "591732.490671", "Designated Landmarks", "Downtown", "11", "24510401001042", "1", "CENTRAL", "18S UJ 61019 50286", "Jamie Gerhart", "4103964106", "Department of Planning", "Old Post Office Building", "38_20" ]
+, [ "row-e8yq~9ygm~bhs5", "00000000-0000-0000-3A54-4EAD0B4F491D", 0, 1450404466, null, 1450404466, null, "{ }", "22", "POINT (-76.6188805795258 39.32965145778722)", "Johns Hopkins University", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21218", "1420143.30835", "605874.559172", "Designated Landmarks", "Johns Hopkins Homewood", "14", "245101202004000", "5", "NORTHERN", "18S UJ 60467 54609", "Jamie Gerhart", "4103964106", "Department of Planning", "Homewood House", "38_21" ]
+, [ "row-br88~vhv4-ef9g", "00000000-0000-0000-B4D9-9A1D203E70E4", 0, 1450404466, null, 1450404466, null, "{ }", "23", "POINT (-76.64628507317084 39.324381127054195)", "Druid Hill Park", "N", "", "0", 1289894400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21217", "1412398.68169", "603923.724714", "Designated Landmarks", "Druid Hill Park", "11", "245101304001000", "0", "NORTHERN", "18S UJ 58095 54067", "Jamie Gerhart", "4103964106", "Department of Planning", "Maryland House", "" ]
+, [ "row-dmk8.zgqn.ipa6", "00000000-0000-0000-5C8A-7F29FF3703C9", 0, 1450404466, null, 1450404466, null, "{ }", "24", "POINT (-76.6204507070977 39.28774621117747)", "312-318 W. Lombard Street", "Y", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21201", "1419762.61784", "590609.493573", "Designated Landmarks", "Downtown", "11", "24510401001069", "1", "CENTRAL", "18S UJ 60249 49960", "Jamie Gerhart", "4103964106", "Department of Planning", "Baltimore Arts Tower (Bromo Seltzer)", "38_23" ]
+, [ "row-v29z~hbmh.j599", "00000000-0000-0000-40A4-9500C85E363C", 0, 1450404466, null, 1450404466, null, "{ }", "25", "POINT (-76.61195042279377 39.289068426640874)", "202 E. Redwood Street", "Y", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21202", "1422166.51395", "591101.198299", "Designated Landmarks", "Downtown", "11", "24510401001055", "1", "CENTRAL", "18S UJ 60984 50094", "Jamie Gerhart", "4103964106", "Department of Planning", "Mercantile Safe Deposit and Trust Building", "38_24" ]
+, [ "row-bb5g.x3ha-tg8b", "00000000-0000-0000-99EF-6B19A899F3AB", 0, 1450404466, null, 1450404466, null, "{ }", "26", "POINT (-76.6033805685185 39.28755087906824)", "844 E. Pratt Street", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21202", "1424594.50352", "590558.888031", "Designated Landmarks", "Jonestown", "12", "24510302002007", "2", "SOUTHEASTERN", "18S UJ 61721 49913", "Jamie Gerhart", "4103964106", "Department of Planning", "Star Spangled Banner Flag House", "38_25" ]
+, [ "row-k23b_bbiw.3q36", "00000000-0000-0000-A71D-E09F7BE00793", 0, 1450404466, null, 1450404466, null, "{ }", "27", "POINT (-76.61527623311731 39.29800639870879)", "1-21 E. Mount Street", "Y", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21201", "1421211.46534", "594352.690155", "Designated Landmarks", "Mount Vernon", "11", "245101102002009", "1", "CENTRAL", "18S UJ 60715 51091", "Jamie Gerhart", "4103964106", "Department of Planning", "Peabody Institute", "38_26" ]
+, [ "row-fmhv-7vww.wm2a", "00000000-0000-0000-1E6B-144C44BEBC50", 0, 1450404466, null, 1450404466, null, "{ }", "28", "POINT (-76.60110469586829 39.29185299363168)", "1201 E. Fayette Street", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21202", "1425231.82705", "592128.650312", "Designated Landmarks", "Jonestown", "12", "24510302001000", "2", "SOUTHEASTERN", "18S UJ 61925 50387", "Jamie Gerhart", "4103964106", "Department of Planning", "Old Town Friends' Meeting House", "38_27" ]
+, [ "row-99nc_cm6h~9ph8", "00000000-0000-0000-A1BE-18F594ABB911", 0, 1450404466, null, 1450404466, null, "{ }", "29", "POINT (-76.62341600370362 39.295852331423966)", "600 N. Paca Street", "Y", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21201", "1418911.13234", "593558.508016", "Designated Landmarks", "Seton Hill", "11", "245101701002000", "1", "CENTRAL", "18S UJ 60009 50865", "Jamie Gerhart", "4103964106", "Department of Planning", "Mother Seton House", "38_28" ]
+, [ "row-mjjc.zjv8_gpvn", "00000000-0000-0000-0A36-C49E2CA4906E", 0, 1450404466, null, 1450404466, null, "{ }", "30", "POINT (-76.61567081798783 39.297561060773155)", "Charles Street at Monument", "Y", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21201", "1421100.47999", "594190.014299", "Designated Landmarks", "Mount Vernon", "11", "245101102002011", "1", "CENTRAL", "18S UJ 60680 51042", "Jamie Gerhart", "4103964106", "Department of Planning", "Washington Monument and Mount Vernon Place", "38_29" ]
+, [ "row-b5mj~3kh9~qrka", "00000000-0000-0000-07C8-C6A42AF83E65", 0, 1450404466, null, 1450404466, null, "{ }", "31", "POINT (-76.62335469430907 39.28998427526257)", "509-513 W. Fayette Street", "Y", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21201", "1418937.3019", "591421.258026", "Designated Landmarks", "University Of Maryland", "11", "24510402002015", "1", "CENTRAL", "18S UJ 60003 50213", "Jamie Gerhart", "4103964106", "Department of Planning", "Westminister Presbyterian Church", "38_30" ]
+, [ "row-wdy6-78p7.n65g", "00000000-0000-0000-BFC7-7823C18AAB50", 0, 1450404466, null, 1450404466, null, "{ }", "32", "POINT (-76.61645690344386 39.29440562032534)", "401 Cathedral Street", "Y", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21201", "1420882.84395", "593039.772177", "Designated Landmarks", "Downtown", "11", "24510401002018", "1", "CENTRAL", "18S UJ 60606 50693", "Jamie Gerhart", "4103964106", "Department of Planning", "Basilica of the Assumption", "38_31" ]
+, [ "row-jizm~ehjy.mzkv", "00000000-0000-0000-17B1-D92055E1FABE", 0, 1450404466, null, 1450404466, null, "{ }", "33", "POINT (-76.64182995814724 39.28750976049384)", "1524 Hollins Street", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21223", "1413711.71131", "590498.920304", "Designated Landmarks", "Union Square", "9", "245101902001003", "9", "SOUTHERN", "18S UJ 58404 49967", "Jamie Gerhart", "4103964106", "Department of Planning", "H.L. Mencken House", "38_32" ]
+, [ "row-8ey5~wybi.rktd", "00000000-0000-0000-0BD5-7C4C2ED88AF9", 0, 1450404466, null, 1450404466, null, "{ }", "34", "POINT (-76.60541368368169 39.29073305908349)", "801 E. Fayette Street", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21202", "1424014.03421", "591715.436899", "Designated Landmarks", "Jonestown", "12", "24510302001005", "2", "SOUTHEASTERN", "18S UJ 61551 50269", "Jamie Gerhart", "4103964106", "Department of Planning", "Shot Tower", "38_33" ]
+, [ "row-yebk-qdet~tgbn", "00000000-0000-0000-E380-0C29FED54AFF", 0, 1450404466, null, 1450404466, null, "{ }", "36", "POINT (-76.60629078792155 39.291327433508904)", "120 N. Front Street", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21202", "1423764.85295", "591930.853791", "Designated Landmarks", "Jonestown", "12", "24510501001051", "2", "SOUTHEASTERN", "18S UJ 61477 50336", "Jamie Gerhart", "4103964106", "Department of Planning", "St. Vincent De Paul Church", "38_34" ]
+, [ "row-ye3z_3qsw.kdwc", "00000000-0000-0000-DBE1-4484DE9990D5", 0, 1450404466, null, 1450404466, null, "{ }", "37", "POINT (-76.61613133522016 39.29395693632483)", "7-9 W. Mulberry Street", "Y", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21201", "1420975.67217", "592876.735102", "Designated Landmarks", "Downtown", "11", "24510401002017", "1", "CENTRAL", "18S UJ 60634 50643", "Jamie Gerhart", "4103964106", "Department of Planning", "Old Cathedral School", "38_35" ]
+, [ "row-7nuk_ci8q.9u55", "00000000-0000-0000-109D-4E27788ECDB6", 0, 1450404466, null, 1450404466, null, "{ }", "38", "POINT (-76.6330508392267 39.29127688020492)", "203 N. Amity Street", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21223", "1416191.07183", "591880.886044", "Designated Landmarks", "Poppleton", "11", "245101801002004", "7", "WESTERN", "18S UJ 59169 50372", "Jamie Gerhart", "4103964106", "Department of Planning", "Edgar Allan Poe House", "38_36" ]
+, [ "row-2hvn-p89p-zrqy", "00000000-0000-0000-BCC2-E68923668E16", 0, 1450404466, null, 1450404466, null, "{ }", "39", "POINT (-76.61600715289543 39.29715471872276)", "1 W. Mount Vernon Place", "Y", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21201", "1421005.91883", "594041.611709", "Designated Landmarks", "Mount Vernon", "11", "245101102002014", "1", "CENTRAL", "18S UJ 60651 50998", "Jamie Gerhart", "4103964106", "Department of Planning", "Thomas-Jencks-Gladding-Hackerman House", "38_37" ]
+, [ "row-vi5m-2t2w_54i9", "00000000-0000-0000-DB81-3F99B352E9E2", 0, 1450404466, null, 1450404466, null, "{ }", "40", "POINT (-76.58705523549258 39.32091725229623)", "Clifton Park", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21213", "1429160.30278", "602732.428973", "Designated Landmarks", "Clifton Park", "14", "24510801011012", "4", "NORTHEASTERN", "18S UJ 63194 53591", "Jamie Gerhart", "4103964106", "Department of Planning", "Clifton Mansion", "38_38" ]
+, [ "row-vkan_sbq6.dvaj", "00000000-0000-0000-0EC8-5B9F5D94604F", 0, 1450404466, null, 1450404466, null, "{ }", "41", "POINT (-76.63556908397366 39.3503852723924)", "4800 Roland Avenue", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21210", "1415392.38905", "613407.270484", "Designated Landmarks", "Roland Park", "6", "245102714001018", "5", "NORTHERN", "18S UJ 59071 56936", "Jamie Gerhart", "4103964106", "Department of Planning", "Roland Park Shopping Center", "38_39" ]
+, [ "row-j3sf-22qh_a6ua", "00000000-0000-0000-898B-72AD5D067B27", 0, 1450404466, null, 1450404466, null, "{ }", "42", "POINT (-76.62335111970617 39.29588469241816)", "600 N. Paca Street", "Y", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21201", "1418929.44661", "593570.370526", "Designated Landmarks", "Seton Hill", "11", "245101701002000", "1", "CENTRAL", "18S UJ 60015 50868", "Jamie Gerhart", "4103964106", "Department of Planning", "St.Mary's Seminary Chapel", "38_40" ]
+, [ "row-ayxm.q9nd_uf9h", "00000000-0000-0000-7AF7-3454B25BF731", 0, 1450404466, null, 1450404466, null, "{ }", "43", "POINT (-76.60104149672881 39.28999763224511)", "15 Lloyd Street", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21202", "1425252.66723", "591452.951532", "Designated Landmarks", "Jonestown", "12", "24510302001015", "2", "SOUTHEASTERN", "18S UJ 61927 50181", "Jamie Gerhart", "4103964106", "Department of Planning", "B'nai Israel Synagogue", "38_41" ]
+, [ "row-bems~5ez8.bdk6", "00000000-0000-0000-FDC4-D616D46D387B", 0, 1450404466, null, 1450404466, null, "{ }", "44", "POINT (-76.59721658716849 39.29698051400809)", "525 N. Caroline Street", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21287", "1426324.0227", "594001.077013", "Designated Landmarks", "Dunbar-Broadway", "12", "24510605001000", "3", "EASTERN", "18S UJ 62271 50950", "Jamie Gerhart", "4103964106", "Department of Planning", "First Baptist Church", "38_42" ]
+, [ "row-ta7b-js3j_dh3s", "00000000-0000-0000-5E7C-5E6680AB927A", 0, 1450404466, null, 1450404466, null, "{ }", "45", "POINT (-76.64160031981207 39.30527538152201)", "1373 N. Stricker Street", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21217", "1413751.30473", "596969.958215", "Designated Landmarks", "Sandtown-Winchester", "7", "245101501003005", "7", "WESTERN", "18S UJ 58460 51939", "Jamie Gerhart", "4103964106", "Department of Planning", "Sharon Baptist Church", "38_43" ]
+, [ "row-4qmv~ne6n.vare", "00000000-0000-0000-C386-1EFDE5B5C7D6", 0, 1450404466, null, 1450404466, null, "{ }", "46", "POINT (-76.57732252157882 39.3626834910816)", "Hillen Road (SW of Club House)", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21239", "1431843.34597", "617957.739402", "Designated Landmarks", "Mt Pleasant Park", "4", "245102708031002", "4", "NORTHEASTERN", "18S UJ 64114 58212", "Jamie Gerhart", "4103964106", "Department of Planning", "Taylor's Chapel and Burial Ground", "38_44" ]
+, [ "row-84kz-m746-vbjh", "00000000-0000-0000-C960-EFA0152C8DFE", 0, 1450404466, null, 1450404466, null, "{ }", "47", "POINT (-76.60964970670042 39.29161701219892)", "140-246 N. Gay Street", "Y", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21202", "1422813.73313", "592032.244337", "Designated Landmarks", "Downtown", "11", "24510401001026", "1", "CENTRAL", "18S UJ 61188 50373", "Jamie Gerhart", "4103964106", "Department of Planning", "Zion Lutheran Church and Parish House", "38_45" ]
+, [ "row-uciq_iwsf_jx5r", "00000000-0000-0000-119B-6BEC8BB5ED75", 0, 1450404466, null, 1450404466, null, "{ }", "48", "POINT (-76.61064783481592 39.28887193127801)", "19-21 South Street", "Y", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21202", "1422535.50009", "591031.198767", "Designated Landmarks", "Downtown", "11", "24510401001054", "1", "CENTRAL", "18S UJ 61096 50070", "Jamie Gerhart", "4103964106", "Department of Planning", "Furness House", "38_46" ]
+, [ "row-y2nv.pzam.4iax", "00000000-0000-0000-204D-6C5FC7AFB23A", 0, 1450404466, null, 1450404466, null, "{ }", "49", "POINT (-76.61501216332408 39.31589237809828)", "2313 St. Paul Street", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21218", "1421258.72344", "600867.639067", "Designated Landmarks", "Barclay", "12", "245101204001007", "5", "NORTHERN", "18S UJ 60774 53076", "Jamie Gerhart", "4103964106", "Department of Planning", "Goucher House", "38_47" ]
+, [ "row-dtc3-sdtz_c9h9", "00000000-0000-0000-2120-81A5132BA883", 0, 1450404466, null, 1450404466, null, "{ }", "50", "POINT (-76.60905170282808 39.28806011393985)", "40 S. Gay Street", "Y", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21202", "1422988.53265", "590737.441808", "Designated Landmarks", "Downtown", "11", "24510401001087", "1", "CENTRAL", "18S UJ 61232 49978", "Jamie Gerhart", "4103964106", "Department of Planning", "United States Customs House", "38_48" ]
+, [ "row-sqbt~wyhu~dfde", "00000000-0000-0000-C3A8-5263CED91093", 0, 1450404466, null, 1450404466, null, "{ }", "51", "POINT (-76.61563367830962 39.30738192639213)", "1525 N. Charles Street", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21201", "1421095.92948", "597767.120662", "Designated Landmarks", "Charles North", "12", "245101205004015", "1", "CENTRAL", "18S UJ 60703 52132", "Jamie Gerhart", "4103964106", "Department of Planning", "Pennsylvania Station", "38_49" ]
+, [ "row-xmj2~7rdi~hga2", "00000000-0000-0000-C61E-A23748D939AF", 0, 1450404466, null, 1450404466, null, "{ }", "52", "POINT (-76.62142028298604 39.336513626250586)", "104 W. 39th Street", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21210", "1419414.52306", "608371.007263", "Designated Landmarks", "Tuscany-Canterbury", "14", "245101201003007", "5", "NORTHERN", "18S UJ 60262 55374", "Jamie Gerhart", "4103964106", "Department of Planning", "Ascot House (Razed 1981)", "38_50" ]
+, [ "row-s5du-s2cq_urjz", "00000000-0000-0000-E9DA-2BCB466C4422", 0, 1450404466, null, 1450404466, null, "{ }", "53", "POINT (-76.62480024629873 39.28557691543659)", "216 Emory Street", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21230", "1418534.75973", "589814.283221", "Designated Landmarks", "Ridgely's Delight", "11", "245102201001007", "9", "SOUTHERN", "18S UJ 59869 49726", "Jamie Gerhart", "4103964106", "Department of Planning", "Babe Ruth House", "38_51" ]
+, [ "row-us4d.2wme-8cwk", "00000000-0000-0000-6478-34DCC1FDBD1E", 0, 1450404466, null, 1450404466, null, "{ }", "54", "POINT (-76.60856406045873 39.29095598927437)", "101 N. Gay Street", "Y", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21202", "1423122.03271", "591792.795997", "Designated Landmarks", "Downtown", "11", "24510401001045", "1", "CENTRAL", "18S UJ 61280 50298", "Jamie Gerhart", "4103964106", "Department of Planning", "War Memorial", "38_52" ]
+, [ "row-ka9p~43nt~6gqz", "00000000-0000-0000-5313-69DB0BF03EBB", 0, 1450404466, null, 1450404466, null, "{ }", "55", "POINT (-76.61247381543016 39.289441071039064)", "135 E. Baltimore Street", "Y", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21202", "1422017.79804", "591236.29711", "Designated Landmarks", "Downtown", "11", "24510401001056", "1", "CENTRAL", "18S UJ 60940 50136", "Jamie Gerhart", "4103964106", "Department of Planning", "Alexander Brown and Sons", "38_53" ]
+, [ "row-pi43.jwvy~rrvh", "00000000-0000-0000-0A86-6A82EAEBF354", 0, 1450404466, null, 1450404466, null, "{ }", "56", "POINT (-76.61277763247246 39.29080348465939)", "100 N. Calvert Street", "Y", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21202", "1421929.70209", "591732.163244", "Designated Landmarks", "Downtown", "11", "24510401001035", "1", "CENTRAL", "18S UJ 60917 50288", "Jamie Gerhart", "4103964106", "Department of Planning", "Baltimore City Courthouse", "38_54" ]
+, [ "row-6g83_24r3_kyp7", "00000000-0000-0000-C9B1-9D2216236189", 0, 1450404466, null, 1450404466, null, "{ }", "57", "POINT (-76.67436856889712 39.36500363985651)", "5914 Greenspring Avenue", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21209", "1404401.16464", "618690.364905", "Designated Landmarks", "Cheswolde", "5", "245102720032000", "6", "NORTHWESTERN", "18S UJ 55757 58620", "Jamie Gerhart", "4103964106", "Department of Planning", "Carroll Hunting Lodge", "38_55" ]
+, [ "row-82r3.7yyy-ucnf", "00000000-0000-0000-ED8B-395F8A733995", 0, 1450404466, null, 1450404466, null, "{ }", "58", "POINT (-76.61195126442523 39.289432032800896)", "201 E. Baltimore Street", "Y", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21202", "1422165.71277", "591233.633401", "Designated Landmarks", "Downtown", "11", "24510401001055", "1", "CENTRAL", "18S UJ 60985 50134", "Jamie Gerhart", "4103964106", "Department of Planning", "Continental Trust Building", "38_56" ]
+, [ "row-fier_c3qh_8z4k", "00000000-0000-0000-00D2-F1951B30C2D3", 0, 1450404466, null, 1450404466, null, "{ }", "59", "POINT (-76.69885046264754 39.305098367883716)", "Leakin Park", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21207", "1397551.25084", "596846.961085", "Designated Landmarks", "Franklintown", "8", "245102803011000", "8", "SOUTHWESTERN", "18S UJ 53523 52010", "Jamie Gerhart", "4103964106", "Department of Planning", "Crimea House, Chapel and Stables", "38_57" ]
+, [ "row-erea.4p6g.64u5", "00000000-0000-0000-D9D1-8AA92F1145F6", 0, 1450404466, null, 1450404466, null, "{ }", "60", "POINT (-76.64165424633501 39.31026115766413)", "1500 W. North Avenue", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21217", "1413728.91632", "598785.876499", "Designated Landmarks", "Penn North", "7", "245101303003010", "7", "WESTERN", "18S UJ 58465 52492", "Jamie Gerhart", "4103964106", "Department of Planning", "Etting Cemetary", "38_58" ]
+, [ "row-e9u5_up3v_s39v", "00000000-0000-0000-FBC3-EB50530786EE", 0, 1450404466, null, 1450404466, null, "{ }", "61", "POINT (-76.61137424768813 39.351515085980346)", "431 Notre Dame Lane", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21212", "1422232.76382", "613847.010746", "Designated Landmarks", "Radnor-Winston", "4", "245102711012000", "5", "NORTHERN", "18S UJ 61158 57024", "Jamie Gerhart", "4103964106", "Department of Planning", "Gallagher Mansion", "38_59" ]
+, [ "row-3tuu-z8zn.8b3s", "00000000-0000-0000-44EB-B5F398C6F44D", 0, 1450404466, null, 1450404466, null, "{ }", "62", "POINT (-76.60605635000755 39.309848030294965)", "1501 Greenmount Avenue", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21202", "1423802.095", "598676.905588", "Designated Landmarks", "Greenmount Cemetery", "12", "24510909005003", "3", "EASTERN", "18S UJ 61534 52391", "Jamie Gerhart", "4103964106", "Department of Planning", "Greenmount Cemetary Chapel and Gates", "38_60" ]
+, [ "row-bxs9~7wh6~hfpi", "00000000-0000-0000-9180-FDCA953AFAAA", 0, 1450404466, null, 1450404466, null, "{ }", "63", "POINT (-76.7081454734456 39.31418403010506)", "5214 Windsor Mill Road", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21207", "1394910.4205", "600147.715967", "Designated Landmarks", "Dickeyville", "8", "245102803012004", "8", "SOUTHWESTERN", "18S UJ 52741 53034", "Jamie Gerhart", "4103964106", "Department of Planning", "James Lawrence Kernan Hospital", "38_61" ]
+, [ "row-8ys3-nhbv-t7z7", "00000000-0000-0000-A513-FCD01D779372", 0, 1450404466, null, 1450404466, null, "{ }", "64", "POINT (-76.61744911244949 39.27722599653467)", "1021 Leadenhall Street", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21230", "1420628.25456", "586781.275836", "Designated Landmarks", "Sharp-Leadenhall", "10", "245102301001004", "9", "SOUTHERN", "18S UJ 60487 48788", "Jamie Gerhart", "4103964106", "Department of Planning", "Leadenhall Baptist Church", "38_62" ]
+, [ "row-j8iw-vhm5.qfk6", "00000000-0000-0000-233E-A92855A6BAAE", 0, 1450404466, null, 1450404466, null, "{ }", "65", "POINT (-76.64293835198369 39.278944200855996)", "Carroll Park", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21230", "1413410.18993", "587377.864538", "Designated Landmarks", "Carroll Park", "9", "245102102002013", "9", "SOUTHERN", "18S UJ 58291 49019", "Jamie Gerhart", "4103964106", "Department of Planning", "Mount Clare Mansion", "38_63" ]
+, [ "row-afda-r3ez.sbfn", "00000000-0000-0000-F8C2-700F8A73BA90", 0, 1450404466, null, 1450404466, null, "{ }", "66", "POINT (-76.61985039038571 39.305520517325796)", "1400 Cathedral Street", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21201", "1419905.57359", "597084.140729", "Designated Landmarks", "Mid-Town Belvedere", "11", "245101102001007", "1", "CENTRAL", "18S UJ 60336 51932", "Jamie Gerhart", "4103964106", "Department of Planning", "Mount Royal Station and Shed", "38_64" ]
+, [ "row-a36v_qkri.dvsi", "00000000-0000-0000-52C7-FF92402CF727", 0, 1450404466, null, 1450404466, null, "{ }", "67", "POINT (-76.6171801545569 39.295310079262364)", "100 W. Franklin - 502 Cathedral", "Y", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21201", "1420676.77087", "593368.344027", "Designated Landmarks", "Mount Vernon", "11", "245101102003022", "1", "CENTRAL", "18S UJ 60546 50795", "Jamie Gerhart", "4103964106", "Department of Planning", "Bread of Life Cathedral", "38_65" ]
+, [ "row-5gfv~bngs_iar5", "00000000-0000-0000-4349-9BE591B48567", 0, 1450404466, null, 1450404466, null, "{ }", "68", "POINT (-76.57983319507261 39.28963607110111)", "Fort Hill, Patterson Park", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21224", "1431255.92983", "591348.191571", "Designated Landmarks", "Patterson Park", "1", "24510103001000", "2", "SOUTHEASTERN", "18S UJ 63755 50108", "Jamie Gerhart", "4103964106", "Department of Planning", "Patterson Park Observatory", "38_66" ]
+, [ "row-imsy-6bxg~7uyt", "00000000-0000-0000-53AB-4FEE0DDD2C50", 0, 1450404466, null, 1450404466, null, "{ }", "69", "POINT (-76.60873920080235 39.30231597405184)", "501 E. Chase Street", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21202", "1423054.72871", "595930.231619", "Designated Landmarks", "Johnston Square", "12", "245101004002002", "3", "EASTERN", "18S UJ 61288 51559", "Jamie Gerhart", "4103964106", "Department of Planning", "Saint Frances Academy", "38_67" ]
+, [ "row-d2a2-qukd-vxja", "00000000-0000-0000-ECFA-07FE0749F010", 0, 1450404466, null, 1450404466, null, "{ }", "70", "POINT (-76.60087537440607 39.2872564174516)", "225 S. Exeter Street", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21202", "1425304.05065", "590454.726822", "Designated Landmarks", "Little Italy", "1", "24510302003001", "2", "SOUTHEASTERN", "18S UJ 61936 49876", "Jamie Gerhart", "4103964106", "Department of Planning", "Saint Leo's Church", "38_68" ]
+, [ "row-dipn.uvbj_rhzs", "00000000-0000-0000-0657-98FBF968E749", 0, 1450404466, null, 1450404466, null, "{ }", "71", "POINT (-76.63871528463962 39.30643355732036)", "1550 N. Fremont Avenue", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21217", "1414566.02226", "597395.020357", "Designated Landmarks", "Sandtown-Winchester", "7", "245101501002013", "7", "WESTERN", "18S UJ 58711 52063", "Jamie Gerhart", "4103964106", "Department of Planning", "Saint Peter Claver Church", "38_69" ]
+, [ "row-jh4s_9v6a~vn4f", "00000000-0000-0000-7619-AA6724FF5C55", 0, 1450404466, null, 1450404466, null, "{ }", "72", "POINT (-76.6284236619991 39.30076452453439)", "508 Dolphin Street", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21217", "1417486.63027", "595341.871576", "Designated Landmarks", "Upton", "11", "245101702001012", "1", "CENTRAL", "18S UJ 59587 51418", "Jamie Gerhart", "4103964106", "Department of Planning", "Sharp Street United Methodist Church", "38_70" ]
+, [ "row-2ha4_kwpk-3ehe", "00000000-0000-0000-0E39-9FE0BBFAB88E", 0, 1450404466, null, 1450404466, null, "{ }", "73", "POINT (-76.57981738863353 39.2632456076266)", "1401 Constellation Plaza", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21230", "1431304.64659", "581736.082514", "Designated Landmarks", "Locust Point Industrial Area", "10", "245102401002000", "9", "SOUTHERN", "18S UJ 63706 47179", "Jamie Gerhart", "4103964106", "Department of Planning", "Fort McHenry", "38_71" ]
+, [ "row-4x7e-93td-dc2v", "00000000-0000-0000-E8F7-E2C784FA98CB", 0, 1450404466, null, 1450404466, null, "{ }", "74", "POINT (-76.62193366468027 39.29264034705638)", "415-417 W. Saratoga Street", "Y", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21201", "1419335.49501", "592390.340733", "Designated Landmarks", "Downtown", "11", "24510401002032", "1", "CENTRAL", "18S UJ 60131 50506", "Jamie Gerhart", "4103964106", "Department of Planning", "G. Krug & Sons", "38_72" ]
+, [ "row-94ey_hvnv-chqk", "00000000-0000-0000-67C3-E6FAA8811F18", 0, 1450404466, null, 1450404466, null, "{ }", "75", "POINT (-76.61999460231053 39.29240153704815)", "222 N. Howard Street", "Y", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21201", "1419884.65664", "592305.637819", "Designated Landmarks", "Downtown", "11", "24510401002027", "1", "CENTRAL", "18S UJ 60297 50476", "Jamie Gerhart", "4103964106", "Department of Planning", "Hutzler's Palace Building", "38_73" ]
+, [ "row-5jpf~7r4b_nxgt", "00000000-0000-0000-6233-9BC3C9807235", 0, 1450404466, null, 1450404466, null, "{ }", "76", "POINT (-76.65483149941831 39.36924122877631)", "5801 Smith Avenue", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21209", "1409919.14212", "620254.1541", "Designated Landmarks", "Mount Washington", "5", "245102715011008", "5", "NORTHERN", "18S UJ 57449 59059", "Jamie Gerhart", "4103964106", "Department of Planning", "Octagon Building, U.S.F & G", "38_74" ]
+, [ "row-3mgy-i9wi~gq3x", "00000000-0000-0000-7047-C1DD5716B55A", 0, 1450404466, null, 1450404466, null, "{ }", "77", "POINT (-76.63876751408763 39.25903474294897)", "2614 Annapolis Road", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21230", "1414619.55792", "580130.93579", "Designated Landmarks", "Westport", "10", "245102503011023", "9", "SOUTHERN", "18S UJ 58611 46802", "Jamie Gerhart", "4103964106", "Department of Planning", "Mount Auburn Cemetary", "38_75" ]
+, [ "row-2s7d_ga3b-va88", "00000000-0000-0000-E397-70BBDDD4ABE1", 0, 1450404466, null, 1450404466, null, "{ }", "78", "POINT (-76.62777955564384 39.30337231484567)", "1300 Madison Avenue", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21217", "1417665.03345", "596292.452024", "Designated Landmarks", "Madison Park", "11", "245101702001004", "1", "CENTRAL", "18S UJ 59648 51706", "Jamie Gerhart", "4103964106", "Department of Planning", "Booker T. Washington Jr. High School", "38_76" ]
+, [ "row-yt4v-iyd3_c2d6", "00000000-0000-0000-FA7E-83F1096115D4", 0, 1450404466, null, 1450404466, null, "{ }", "79", "POINT (-76.63118836612644 39.283055047067464)", "906 Washington Boulevard", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21230", "1416730.30402", "588888.376937", "Designated Landmarks", "Washington Village", "11", "245102101001009", "9", "SOUTHERN", "18S UJ 59313 49456", "Jamie Gerhart", "4103964106", "Department of Planning", "Walters Bath House and Engine House #10", "38_77" ]
+, [ "row-df5r-e3dq_4e8z", "00000000-0000-0000-007C-A07FD9A1444B", 0, 1450404466, null, 1450404466, null, "{ }", "80", "POINT (-76.60976554607134 39.29867173040864)", "Buren and Madison Streets", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21202", "1422769.9632", "594601.643725", "Designated Landmarks", "Penn-Fallsway", "12", "245101004002010", "3", "EASTERN", "18S UJ 61192 51157", "Jamie Gerhart", "4103964106", "Department of Planning", "Warden's House -Baltimore City Jail", "38_78" ]
+, [ "row-bhft.ey9t.sy4d", "00000000-0000-0000-86CD-15D96322293B", 0, 1450404466, null, 1450404466, null, "{ }", "81", "POINT (-76.59134942718505 39.28220236190074)", "810-812 S. Ann Street", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21231", "1428008.55673", "588625.825297", "Designated Landmarks", "Fells Point", "1", "24510203001026", "2", "SOUTHEASTERN", "18S UJ 62748 49301", "Jamie Gerhart", "4103964106", "Department of Planning", "Robert Long House", "38_79" ]
+, [ "row-xb36_x8ke_jhis", "00000000-0000-0000-A540-6333644F59EB", 0, 1450404466, null, 1450404466, null, "{ }", "82", "POINT (-76.6309556285506 39.337332651542766)", "830 W. 40th Avenue", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21211", "1416716.2614", "608658.280966", "Designated Landmarks", "Roland Park", "14", "245101307003001", "5", "NORTHERN", "18S UJ 59442 55480", "Jamie Gerhart", "4103964106", "Department of Planning", "Greenway Cottages", "38_80" ]
+, [ "row-tfsr.qz58-k7vq", "00000000-0000-0000-7B11-F3714A6593C4", 0, 1450404466, null, 1450404466, null, "{ }", "83", "POINT (-76.60905533942855 39.276691068661115)", "1124-1126 Riverside Avenue", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21230", "1423005.23701", "586596.506849", "Designated Landmarks", "Riverside", "10", "245102403001007", "9", "SOUTHERN", "18S UJ 61210 48716", "Jamie Gerhart", "4103964106", "Department of Planning", "1124-1126 Riverside Avenue", "38_81" ]
+, [ "row-sut8~pgev~9sf7", "00000000-0000-0000-BD48-A2D2D532431D", 0, 1450404466, null, 1450404466, null, "{ }", "84", "POINT (-76.61984179925683 39.29272802641476)", "240 N. Howard Street", "Y", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21201", "1419927.40852", "592424.735022", "Designated Landmarks", "Downtown", "11", "24510401002027", "1", "CENTRAL", "18S UJ 60311 50512", "Jamie Gerhart", "4103964106", "Department of Planning", "Provident Bank of Maryland", "38_82" ]
+, [ "row-9hgv_wje7~qbcm", "00000000-0000-0000-4343-99E11D397604", 0, 1450404466, null, 1450404466, null, "{ }", "85", "POINT (-76.61327004577413 39.289034455348045)", "7-11 Light Street", "Y", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21202", "1421793.06358", "591087.239993", "Designated Landmarks", "Downtown", "11", "24510401001081", "1", "CENTRAL", "18S UJ 60871 50092", "Jamie Gerhart", "4103964106", "Department of Planning", "Southern Hotel", "38_83" ]
+, [ "row-eggp_8xwk~a5am", "00000000-0000-0000-4A17-BCEC0E7D8127", 0, 1450404466, null, 1450404466, null, "{ }", "86", "POINT (-76.61451675266595 39.29025437609542)", "11-13 E. Fayette Street", "Y", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21202", "1421438.32249", "591530.078346", "Designated Landmarks", "Downtown", "11", "24510401001059", "1", "CENTRAL", "18S UJ 60765 50230", "Jamie Gerhart", "4103964106", "Department of Planning", "Macht Building", "38_84" ]
+, [ "row-njhs~4ncx~nxx2", "00000000-0000-0000-EDB7-C85745F821E3", 0, 1450404466, null, 1450404466, null, "{ }", "87", "POINT (-76.6126633133642 39.29130439104478)", "114-120 E. Lexington Street", "Y", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21202", "1421961.28372", "591914.745228", "Designated Landmarks", "Downtown", "11", "24510401001036", "1", "CENTRAL", "18S UJ 60927 50343", "Jamie Gerhart", "4103964106", "Department of Planning", "Old Federal Reserve Bank", "38_85" ]
+, [ "row-emut~gej9-n7hx", "00000000-0000-0000-1B50-DDFAAF6A82FA", 0, 1450404466, null, 1450404466, null, "{ }", "88", "POINT (-76.6098746597276 39.288871103498295)", "17 Commerce Street (400 Water Street)", "Y", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21202", "1422754.33955", "591031.831639", "Designated Landmarks", "Downtown", "11", "24510401001088", "1", "CENTRAL", "18S UJ 61163 50069", "Jamie Gerhart", "4103964106", "Department of Planning", "Chamber of Commerce Building", "38_86" ]
+, [ "row-suwv~qt2k-7cz5", "00000000-0000-0000-905B-EE0628F3FFA4", 0, 1450404466, null, 1450404466, null, "{ }", "89", "POINT (-76.6272659004964 39.28784426564566)", "733 W. Redwood Street", "Y", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21201", "1417833.48095", "590637.259594", "Designated Landmarks", "University Of Maryland", "11", "24510402002022", "1", "CENTRAL", "18S UJ 59661 49982", "Jamie Gerhart", "4103964106", "Department of Planning", "Old Saint Paul's Cemetary", "38_87" ]
+, [ "row-nw6w-yn7k.4xyi", "00000000-0000-0000-15E9-0213321F7F0E", 0, 1450404466, null, 1450404466, null, "{ }", "90", "POINT (-76.59014259222216 39.28434918415461)", "612-614 S. Wolfe Street", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21231", "1428346.65809", "589409.289937", "Designated Landmarks", "Fells Point", "1", "24510203001012", "2", "SOUTHEASTERN", "18S UJ 62856 49537", "Jamie Gerhart", "4103964106", "Department of Planning", "Wooden Houses", "38_88" ]
+, [ "row-5y38.ts2y-nsqy", "00000000-0000-0000-F781-B7EE7CFBC9B7", 0, 1450404466, null, 1450404466, null, "{ }", "91", "POINT (-76.62615514113662 39.291123576519)", "651-665 W. Lexington Street", "Y", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21201", "1418142.98131", "591832.967176", "Designated Landmarks", "Seton Hill", "11", "24510402002005", "1", "CENTRAL", "18S UJ 59763 50344", "Jamie Gerhart", "4103964106", "Department of Planning", "Pascault Row", "38_89" ]
+, [ "row-tg4u_xp5y~fe7d", "00000000-0000-0000-CD64-47E34311FE9B", 0, 1450404466, null, 1450404466, null, "{ }", "92", "POINT (-76.61933025863257 39.325614837396266)", "10 Museum Drive", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21218", "1420022.23609", "604403.755355", "Designated Landmarks", "Johns Hopkins Homewood", "14", "245101202004000", "5", "NORTHERN", "18S UJ 60421 54162", "Jamie Gerhart", "4103964106", "Department of Planning", "The Baltimore Museum of Art & Spring House", "38_90" ]
+, [ "row-ajuw.x6qv-hi6a", "00000000-0000-0000-F924-C53E63B44E7F", 0, 1450404466, null, 1450404466, null, "{ }", "93", "POINT (-76.61977309987122 39.29233704363389)", "222 N. Howard Street", "Y", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21201", "1419947.4449", "592282.408535", "Designated Landmarks", "Downtown", "11", "24510401002027", "1", "CENTRAL", "18S UJ 60316 50469", "Jamie Gerhart", "4103964106", "Department of Planning", "Hutzler's Tower Building", "38_91" ]
+, [ "row-4y79_shnv~6a34", "00000000-0000-0000-3062-D30687E03B1A", 0, 1450404466, null, 1450404466, null, "{ }", "94", "POINT (-76.62049306450157 39.33058574371424)", "Charles and 34th Streets", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21218", "1419685.76104", "606212.957773", "Designated Landmarks", "Johns Hopkins Homewood", "14", "245101202004000", "5", "NORTHERN", "18S UJ 60330 54715", "Jamie Gerhart", "4103964106", "Department of Planning", "Johns Hopkins University, Gilman Hall", "38_92" ]
+, [ "row-8uyb.kshe.2pdu", "00000000-0000-0000-AD61-E6369D272736", 0, 1450404466, null, 1450404466, null, "{ }", "95", "POINT (-76.60221185982732 39.286243136897575)", "245 Albemarle Street", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21202", "1424927.37424", "590084.009716", "Designated Landmarks", "Little Italy", "1", "24510302003003", "2", "SOUTHEASTERN", "18S UJ 61819 49766", "Jamie Gerhart", "4103964106", "Department of Planning", "The D'alesandro House", "38_93" ]
+, [ "row-zp3m_unhn_v9wb", "00000000-0000-0000-B5A7-F45E8FAD759B", 0, 1450404466, null, 1450404466, null, "{ }", "96", "POINT (-76.67957028033811 39.283015513782814)", "3800 Frederick Avenue", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21229", "1403035.27957", "588822.27766", "Designated Landmarks", "Irvington", "8", "245102008003003", "8", "SOUTHWESTERN", "18S UJ 55140 49528", "Jamie Gerhart", "4103964106", "Department of Planning", "St. Joseph's Passionist Monastery", "38_94" ]
+, [ "row-24np~zcbx_jxb6", "00000000-0000-0000-A243-EB9977B4E1D9", 0, 1450404466, null, 1450404466, null, "{ }", "97", "POINT (-76.6240151446584 39.29757678855189)", "520 Orchard Street", "Y", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21201", "1418738.98242", "594185.908665", "Designated Landmarks", "Seton Hill", "11", "245101701002003", "1", "CENTRAL", "18S UJ 59961 51057", "Jamie Gerhart", "4103964106", "Department of Planning", "Orchard Street Church", "38_95" ]
+, [ "row-csut~v2ni.mwec", "00000000-0000-0000-D3A0-B1E9A1D55724", 0, 1450404466, null, 1450404466, null, "{ }", "98", "POINT (-76.62764774302337 39.303939111784764)", "1327 Madison Avenue", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21217", "1417701.49204", "596499.049379", "Designated Landmarks", "Madison Park", "11", "245101702001003", "1", "CENTRAL", "18S UJ 59660 51769", "Jamie Gerhart", "4103964106", "Department of Planning", "Douglass Memorial Community Church", "38_96" ]
+, [ "row-274j-29d2~c7kv", "00000000-0000-0000-EB6A-A089CDFD2E55", 0, 1450404466, null, 1450404466, null, "{ }", "99", "POINT (-76.66706887667628 39.30751112188132)", "1705 North Longwood Street", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21216", "1406541.41561", "597756.997323", "Designated Landmarks", "Northwest Community Action", "7", "245101506003002", "8", "SOUTHWESTERN", "18S UJ 56268 52227", "Jamie Gerhart", "4103964106", "Department of Planning", "Buena Vista", "38_97" ]
+, [ "row-866f~5vpw_5j79", "00000000-0000-0000-3A32-694BD9FD259B", 0, 1450404466, null, 1450404466, null, "{ }", "100", "POINT (-76.61502582064094 39.29878938934473)", "8 E. Madison Street", "Y", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21201", "1421281.12989", "594638.177773", "Designated Landmarks", "Mount Vernon", "11", "245101102002001", "1", "CENTRAL", "18S UJ 60738 51178", "Jamie Gerhart", "4103964106", "Department of Planning", "George Howard House", "38_98" ]
+, [ "row-a9q2_c2mn.u4ea", "00000000-0000-0000-2BEA-334446C12A20", 0, 1450404466, null, 1450404466, null, "{ }", "101", "POINT (-76.61613826420088 39.30921310372344)", "1711-1717 N. Charles Street", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21201", "1420950.34512", "598433.492033", "Designated Landmarks", "Charles North", "12", "245101205003015", "1", "CENTRAL", "18S UJ 60663 52336", "Jamie Gerhart", "4103964106", "Department of Planning", "Charles Theater", "38_99" ]
+, [ "row-bjsp-b8e3.4mgc", "00000000-0000-0000-4F43-A6B9A76A90A0", 0, 1450404466, null, 1450404466, null, "{ }", "102", "POINT (-76.6363691194795 39.30693942584658)", "2001 Division Street", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21217", "1415229.17874", "597581.909747", "Designated Landmarks", "Druid Heights", "11", "245101403002003", "1", "CENTRAL", "18S UJ 58914 52115", "Jamie Gerhart", "4103964106", "Department of Planning", "Saint Katherine of Alexandria Protestant Episcopal", "38_100" ]
+, [ "row-m6p3.xtvk.kfww", "00000000-0000-0000-45D3-E855220D0EEB", 0, 1450404466, null, 1450404466, null, "{ }", "103", "POINT (-76.61992835407945 39.29181344282895)", "118 N Howard St", "Y", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21201", "1419904.29833", "592091.514559", "Designated Landmarks", "Downtown", "11", "24510401002034", "1", "CENTRAL", "18S UJ 60302 50411", "Jamie Gerhart", "4103964106", "Department of Planning", "Hecht Company Building", "38_101" ]
+, [ "row-6pbr.v9bj~7pdc", "00000000-0000-0000-C37E-61ECBC2C585B", 0, 1450404466, null, 1450404466, null, "{ }", "104", "POINT (-76.62039516137915 39.29511948901793)", "306-312 W. Franklin Street", "Y", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21201", "1419767.17229", "593295.125669", "Designated Landmarks", "Mount Vernon", "11", "245101701001026", "1", "CENTRAL", "18S UJ 60268 50779", "Jamie Gerhart", "4103964106", "Department of Planning", "Congress Hotel", "38_102" ]
+, [ "row-nd2p_9vqg.xfmq", "00000000-0000-0000-BE98-EE8FC47D5BD4", 0, 1450404466, null, 1450404466, null, "{ }", "105", "POINT (-76.63592108125513 39.286179701553074)", "112 South Carlton Street", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21223", "1415386.11511", "590021.089894", "Designated Landmarks", "Hollins Market", "9", "245101803002016", "9", "SOUTHERN", "18S UJ 58911 49811", "Jamie Gerhart", "4103964106", "Department of Planning", "Carlton Street Stables", "38_103" ]
+, [ "row-etw7~i5gu_n9wz", "00000000-0000-0000-AF0C-F38F0EDCC7CD", 0, 1450404466, null, 1450404466, null, "{ }", "106", "POINT (-76.57173696887125 39.28663168094738)", "3137 Eastern Avenue", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21224", "1433552.5755", "590264.555615", "Designated Landmarks", "Highlandtown", "1", "24510102002003", "2", "SOUTHEASTERN", "18S UJ 64448 49763", "Jamie Gerhart", "4103964106", "Department of Planning", "Patterson Theater", "38_104" ]
+, [ "row-374g_yr8m.vvur", "00000000-0000-0000-D159-4403FB60664A", 0, 1450404466, null, 1450404466, null, "{ }", "107", "POINT (-76.61335554117163 39.29546746880293)", "501 Saint Paul Place", "Y", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21202", "1421758.94127", "593430.231698", "Designated Landmarks", "Mount Vernon", "11", "245101101002019", "1", "CENTRAL", "18S UJ 60876 50806", "Jamie Gerhart", "4103964106", "Department of Planning", "Standard Oil Building", "38_105" ]
+, [ "row-44e9.hkqy-puiy", "00000000-0000-0000-1784-33608A8D1B69", 0, 1450404466, null, 1450404466, null, "{ }", "108", "POINT (-76.59502317262655 39.31819336434055)", "2506 Harford Road", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21218", "1426910.49495", "601730.201975", "Designated Landmarks", "Coldstream Homestead Montebello", "14", "24510907003000", "4", "NORTHEASTERN", "18S UJ 62501 53301", "Jamie Gerhart", "4103964106", "Department of Planning", "Friends Burial Ground", "38_106" ]
+, [ "row-kein_wues~twuk", "00000000-0000-0000-8E55-33AE1E281C40", 0, 1450404466, null, 1450404466, null, "{ }", "109", "POINT (-76.62755786441923 39.32849188224423)", "3355 Keswick Road", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21211", "1417690.43957", "605442.07152", "Designated Landmarks", "Wyman Park", "7", "245101306001007", "5", "NORTHERN", "18S UJ 59717 54494", "Jamie Gerhart", "4103964106", "Department of Planning", "Northern District Police Station", "38_107" ]
+, [ "row-tiis.fpq7_49kd", "00000000-0000-0000-28F3-EB9DDD1004EF", 0, 1450404466, null, 1450404466, null, "{ }", "110", "POINT (-76.62641588442101 39.29869610011806)", "501 W. Preston Street", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21201", "1418057.89618", "594590.806805", "Designated Landmarks", "Heritage Crossing", "11", "245101702002013", "1", "CENTRAL", "18S UJ 59756 51185", "Jamie Gerhart", "4103964106", "Department of Planning", "Samuel Coleridge Taylor Elementary School No. 122", "38_108" ]
+, [ "row-7ikg_auqw.8gf9", "00000000-0000-0000-629D-8F39F85BADBE", 0, 1450404466, null, 1450404466, null, "{ }", "111", "POINT (-76.63351369918537 39.33128508035715)", "1014 W. 36th Street", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21211", "1416001.56696", "606452.63085", "Designated Landmarks", "Hampden", "7", "245101306003002", "5", "NORTHERN", "18S UJ 59209 54813", "Jamie Gerhart", "4103964106", "Department of Planning", "Grace Hampden Methodist Church", "38_109" ]
+, [ "row-jxqa~3yy3_wuuy", "00000000-0000-0000-96BF-3417CBC61046", 0, 1450404466, null, 1450404466, null, "{ }", "112", "POINT (-76.63437083291353 39.37074545593785)", "800 W. Lake Avenue", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21210", "1415701.54361", "620824.572579", "Designated Landmarks", "North Roland Park/Poplar Hill", "5", "245102713001000", "5", "NORTHERN", "18S UJ 59215 59194", "Jamie Gerhart", "4103964106", "Department of Planning", "DuVal/Hirschhorn House", "38_110" ]
+, [ "row-x6y8_vn5e-fim7", "00000000-0000-0000-4769-FE37A8D869A1", 0, 1450404466, null, 1450404466, null, "{ }", "113", "POINT (-76.69720983171689 39.28167821271771)", "5002 Frederick Avenue", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21229", "1398043.80137", "588318.148747", "Designated Landmarks", "Ten Hills", "8", "245102804032000", "8", "SOUTHWESTERN", "18S UJ 53616 49408", "Jamie Gerhart", "4103964106", "Department of Planning", "Patricia Grace Thomas Inn", "38_111" ]
+, [ "row-45wm-ftsa.tzu2", "00000000-0000-0000-1C9A-852EEB1876FA", 0, 1450404466, null, 1450404466, null, "{ }", "35", "POINT (-76.60549985617119 39.29524851565656)", "416 Oldtown Mall", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21202", "1423982.53722", "593359.994634", "Designated Landmarks", "Oldtown", "12", "24510501002013", "3", "EASTERN", "18S UJ 61553 50770", "Jamie Gerhart", "4103964106", "Department of Planning", "Engine House No. 6", "38_112" ]
+, [ "row-2v9r.spjm.abfy", "00000000-0000-0000-4873-9DAA5ECFEC78", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.61023319685154 39.36345714061405)", "5904 York Road", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21212", "1422536.86754", "618198.12442", "Designated Landmarks", "Rosebank", "4", "245102712002011", "5", "NORTHERN", "18S UJ 61280 58348", "Jamie Gerhart", "4103964106", "Department of Planning", "Senator Theatre", "38_113" ]
+, [ "row-qefg-5zd9~txuy", "00000000-0000-0000-46EE-79A318DDB19A", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.61871090379518 39.33518418778359)", "3800 N. Charles Street", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21218", "1420182.88832", "607889.969511", "Designated Landmarks", "Tuscany-Canterbury", "14", "245101201002010", "5", "NORTHERN", "18S UJ 60493 55223", "Jamie Gerhart", "4103964106", "Department of Planning", "Scottish Rite Temple", "38_114" ]
+, [ "row-nm75~6jxv-z3m6", "00000000-0000-0000-8A87-870D43D17872", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.61167012960408 39.29340584357218)", "320 Guilford Ave", "Y", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21202", "1422239.12699", "592681.350978", "Designated Landmarks", "Downtown", "11", "24510401001023", "1", "CENTRAL", "18S UJ 61017 50575", "Jamie Gerhart", "4103964106", "Department of Planning", "Terminal Warehouse", "38_115" ]
+, [ "row-9un2_3ak9.fitn", "00000000-0000-0000-589B-0DB0C5A18890", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.57908045771514 39.32721854366365)", "2320 Mayfield Avenue", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21213", "1431405.86325", "605037.868916", "Designated Landmarks", "Mayfield", "3", "24510801011005", "4", "NORTHEASTERN", "18S UJ 63893 54278", "Jamie Gerhart", "4103964106", "Department of Planning", "Saint Matthew United Church of Christ", "38_116" ]
+, [ "row-23i2.wdbf_vpxm", "00000000-0000-0000-7709-5EF1113121BC", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.62793649498667 39.30178238758059)", "1219 Druid Hill Avenue", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21217", "1417622.98301", "595713.170046", "Designated Landmarks", "Upton", "11", "245101702001014", "1", "CENTRAL", "18S UJ 59631 51530", "Jamie Gerhart", "4103964106", "Department of Planning", "Union Baptist Church", "38_117" ]
+, [ "row-2ngx-qk8z-98hd", "00000000-0000-0000-AA8F-D5B017925F5E", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.63833055575233 39.29647426068525)", "639 North Carey Street", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21217", "1414689.25988", "593767.965931", "Designated Landmarks", "Harlem Park", "11", "245101601004006", "7", "WESTERN", "18S UJ 58724 50957", "Jamie Gerhart", "4103964106", "Department of Planning", "Dr. John E.T. Camper House", "38_118" ]
+, [ "row-3p9b-6tdp.cxdb", "00000000-0000-0000-8E2E-9C443D49825B", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.65705691521944 39.34963806037215)", "4901 Springarden Drive", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21209", "1409316.8008", "613111.565367", "Designated Landmarks", "Coldspring", "6", "245101308051004", "5", "NORTHERN", "18S UJ 57217 56887", "Jamie Gerhart", "4103964106", "Department of Planning", "Ruscombe Mansion", "38_119" ]
+, [ "row-b99x-8z5t-kfrv", "00000000-0000-0000-6C48-F8BEA042F86F", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.59373770128624 39.272330727123475)", "1308 Beason Street", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21230", "1427348.52262", "585027.284593", "Designated Landmarks", "Locust Point Industrial Area", "10", "245102401001012", "9", "SOUTHERN", "18S UJ 62522 48209", "Jamie Gerhart", "4103964106", "Department of Planning", "Christ Church United Church of Christ", "38_120" ]
+, [ "row-vdgy_pbvg~cvp7", "00000000-0000-0000-63A8-53841144DF3B", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.5824985215583 39.29821131792798)", "622 North Milton Avenue", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21205", "1430487.26568", "594468.086578", "Designated Landmarks", "McElderry Park", "13", "24510702004002", "2", "SOUTHEASTERN", "18S UJ 63542 51064", "Jamie Gerhart", "4103964106", "Department of Planning", "Johnny Eck House", "38_121" ]
+, [ "row-aqsc.rn2m~ykrq", "00000000-0000-0000-B389-300C3CEDE449", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.59710159862252 39.325962731199596)", "3220 The Alameda", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21218", "1426309.97515", "604557.457475", "Designated Landmarks", "Coldstream Homestead Montebello", "14", "24510905001000", "4", "NORTHEASTERN", "18S UJ 62337 54166", "Jamie Gerhart", "4103964106", "Department of Planning", "Baltimore City College", "38_122" ]
+, [ "row-9spa_uimj~zeth", "00000000-0000-0000-1A37-9E5D1757063B", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.59671212818296 39.310754267658304)", "1801 N Bond St", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21213", "1426444.62449", "599018.530889", "Designated Landmarks", "Oliver", "12", "24510806006005", "3", "EASTERN", "18S UJ 62341 52478", "Jamie Gerhart", "4103964106", "Department of Planning", "New Life Missisonary Baptist Church", "38_123" ]
+, [ "row-7f98.uj28_gnve", "00000000-0000-0000-B8BF-A9ED2F2C89E5", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.624584282299 39.35024774460255)", "4604 N Charles St", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21210", "1418499.01932", "613369.765966", "Designated Landmarks", "Blythewood", "6", "245102711021000", "5", "NORTHERN", "18S UJ 60017 56904", "Jamie Gerhart", "4103964106", "Department of Planning", "Cedarwood", "38_124" ]
+, [ "row-zkak~9b9m-7bd3", "00000000-0000-0000-02D5-ABB56CA2D3E4", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.6331053584943 39.305009754378226)", "514 Islamic Way", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21217", "1416155.53811", "596882.757602", "Designated Landmarks", "Upton", "11", "245101402002003", "1", "CENTRAL", "18S UJ 59192 51896", "Jamie Gerhart", "4103964106", "Department of Planning", "Masjid Al Haqq", "38_125" ]
+, [ "row-eymb-x8i4-bham", "00000000-0000-0000-4749-14BDD8BE9A95", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.63665716490769 39.30934323494476)", "2140 McCulloh St", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21217", "1415144.18679", "598457.128797", "Designated Landmarks", "Druid Heights", "11", "245101403001009", "1", "CENTRAL", "18S UJ 58894 52383", "Jamie Gerhart", "4103964106", "Department of Planning", "Fire Engine Company No. 25", "38_126" ]
+, [ "row-4bmb-hwme-niyp", "00000000-0000-0000-20AD-BC1A2C08D1DB", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.64248480757 39.30972874667133)", "2426 Pennsylvania Ave", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21217", "1413494.66581", "598591.034041", "Designated Landmarks", "Penn North", "7", "245101501001001", "7", "WESTERN", "18S UJ 58393 52434", "Jamie Gerhart", "4103964106", "Department of Planning", "Arch Social Club", "38_127" ]
+, [ "row-97hb~c87y.cgvy", "00000000-0000-0000-2A45-1B85427E8D43", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.59614893454045 39.284783623860264)", "516-524 S Dallas St", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21231", "1426645.8275", "589559.9481", "Designated Landmarks", "Fells Point", "1", "24510203002003", "2", "SOUTHEASTERN", "18S UJ 62339 49594", "Jamie Gerhart", "4103964106", "Department of Planning", "Douglass Place", "38_128" ]
+, [ "row-wktv_3nn6~wi78", "00000000-0000-0000-F19B-A6283550D4AF", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.64492386447932 39.28841656938841)", "1 N Fulton St", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21223", "1412834.71536", "590825.78612", "Designated Landmarks", "Franklin Square", "9", "245101901003005", "7", "WESTERN", "18S UJ 58139 50073", "Jamie Gerhart", "4103964106", "Department of Planning", "Divine Mission Apostolic Church", "38_129" ]
+, [ "row-ij8t.ra5e.qgfb", "00000000-0000-0000-11F1-C7E883BFAE65", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.5704838738445 39.33831168174012)", "4319 Arabia Ave", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21214", "1433818.69373", "609089.687912", "Designated Landmarks", "Beverly Hills", "3", "245102702001007", "4", "NORTHEASTERN", "18S UJ 64656 55496", "Jamie Gerhart", "4103964106", "Department of Planning", "Weaver House", "38_130" ]
+, [ "row-7xb4.9y5u~vymb", "00000000-0000-0000-695E-30B2C2573502", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.61770095923556 39.33547349280914)", "3807 N Charles St", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21218", "1420468.11348", "607996.538852", "Designated Landmarks", "Guilford", "14", "245101201002005", "5", "NORTHERN", "18S UJ 60581 55253", "Jamie Gerhart", "4103964106", "Department of Planning", "First English Lutheran Church", "38_131" ]
+, [ "row-qjqn~zxdy~kzia", "00000000-0000-0000-A656-426DC6004D9F", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.62379774046518 39.247456564725454)", "801 Bridgeview Rd", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21225", "1418875.73904", "575930.986513", "Designated Landmarks", "Cherry Hill", "10", "245102502041002", "9", "SOUTHERN", "18S UJ 59880 45494", "Jamie Gerhart", "4103964106", "Department of Planning", "Cherry Hill Elementary School #159", "38_132" ]
+, [ "row-26hq_fack-7uwi", "00000000-0000-0000-C0DA-A29EAF890E6A", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.6281345716755 39.32785219869332)", "3324 Keswick Rd", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21211", "1417528.2496", "605208.411882", "Designated Landmarks", "Hampden", "7", "245101306001006", "5", "NORTHERN", "18S UJ 59666 54424", "Jamie Gerhart", "4103964106", "Department of Planning", "Schwing Motor Company Building", "38_133" ]
+, [ "row-cxg8.ic4w-9yif", "00000000-0000-0000-DD0E-28D32D5CF763", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.68078405952393 39.30862255372656)", "3706 Nortonia Rd", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21216", "1402659.09037", "598147.954546", "Designated Landmarks", "Fairmont", "7", "245101509004016", "8", "SOUTHWESTERN", "18S UJ 55088 52372", "Jamie Gerhart", "4103964106", "Department of Planning", "The Mount", "38_134" ]
+, [ "row-c4hw-fbj6_utur", "00000000-0000-0000-2E7E-BE500D881B64", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.60793580612494 39.27027993015175)", "301 E Randall St", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21230", "1423332.19075", "584262.752658", "Designated Landmarks", "Riverside", "10", "245102404003000", "9", "SOUTHERN", "18S UJ 61294 48003", "Jamie Gerhart", "4103964106", "Department of Planning", "Riverside Park", "38_135" ]
+, [ "row-jatq.gfxf~5vjv", "00000000-0000-0000-965D-7EEAB7312DBA", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.58692143912197 39.30948215508489)", "1701 N Gay St", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21213", "1429217.00182", "598567.57477", "Designated Landmarks", "Broadway East", "13", "24510802004004", "3", "EASTERN", "18S UJ 63183 52322", "Jamie Gerhart", "4103964106", "Department of Planning", "Ameican Brewery", "38_136" ]
+, [ "row-qdxe~tpnv_i5i9", "00000000-0000-0000-0A78-3DBAC86115EB", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.63294050270036 39.29810400103849)", "811 W Lanvale St", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21217", "1416212.30178", "594367.655676", "Designated Landmarks", "Upton", "11", "245101703001008", "1", "CENTRAL", "18S UJ 59192 51129", "Jamie Gerhart", "4103964106", "Department of Planning", "Upton Mansion", "38_137" ]
+, [ "row-ka95-9c4g_pji8", "00000000-0000-0000-1EA7-9D13A681B646", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.63495182843774 39.34119136703437)", "4210 Roland Ave", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21211", "1415580.33585", "610059.216485", "Designated Landmarks", "Roland Park", "7", "245101307005000", "5", "NORTHERN", "18S UJ 59105 55915", "Jamie Gerhart", "4103964106", "Department of Planning", "Roland Park Water Tower", "38_138" ]
+, [ "row-zguw_fjcm_8wuk", "00000000-0000-0000-5632-D67E9002D1F1", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.57966972399919 39.348866648582664)", "2302 Montebello Terrace", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21214", "1431202.863", "612922.080838", "Designated Landmarks", "Morgan Park", "3", "245102703013006", "4", "NORTHEASTERN", "18S UJ 63884 56682", "Jamie Gerhart", "4103964106", "Department of Planning", "W.E.B. DuBois House", "38_139" ]
+, [ "row-yb2b~pfku-8ww5", "00000000-0000-0000-7CAF-CBD3470B9093", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.62653510693333 39.30583460316088)", "1400-1420 Mason, 300-310 & 236-250 W Lafayette, and 1401-1421 Jordon", "N", "", "0", 1289894400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21217", "1418013.51918", "597190.732751", "Designated Landmarks", "Bolton Hill", "11", "245101401003005", "0", "CENTRAL", "18S UJ 59760 51977", "Jamie Gerhart", "4103964106", "Department of Planning", "Bolton Square", "" ]
+, [ "row-2svk-26ts~3dqy", "00000000-0000-0000-31FA-A272608BD6DF", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.62244186714392 39.33906291231139)", "200 Tuscany Road", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21210", "1419121.72936", "609298.349568", "Designated Landmarks", "Tuscany-Canterbury", "14", "245101201003001", "5", "NORTHERN", "18S UJ 60179 55659", "Jamie Gerhart", "4103964106", "Department of Planning", "Castalia", "38_140" ]
+, [ "row-jkf8_hrzx~2biv", "00000000-0000-0000-FA23-AD57C33DDBAD", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.59153568148606 39.283198762154534)", "708 S Ann St", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21231", "1427954.21104", "588988.50633", "Designated Landmarks", "Fells Point", "1", "24510203001022", "2", "SOUTHEASTERN", "18S UJ 62734 49411", "Jamie Gerhart", "4103964106", "Department of Planning", "St. Stanislaus Kostka Church", "38_141" ]
+, [ "row-hw2u_v8ae~uben", "00000000-0000-0000-50C8-9B8740BD5D9F", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.5919066672482 39.28345562689213)", "1733 Aliceanna St", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21231", "1427848.78146", "589081.59407", "Designated Landmarks", "Fells Point", "1", "24510203001022", "2", "SOUTHEASTERN", "18S UJ 62702 49441", "Jamie Gerhart", "4103964106", "Department of Planning", "Four Bay House", "38_142" ]
+, [ "row-9mgz.3pzb_g3pg", "00000000-0000-0000-D454-6F494B3B07E6", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.61527616304946 39.31196922128777)", "1920 Saint Paul Street", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21218", "1421190.05199", "599438.38438", "Designated Landmarks", "Charles North", "12", "245101206003021", "1", "CENTRAL", "18S UJ 60743 52641", "Jamie Gerhart", "4103964106", "Department of Planning", "St. Marks Evangelical Lutheran Church", "38_143" ]
+, [ "row-gtiv~yjqn_fpcf", "00000000-0000-0000-A0F4-75BDBAC8A099", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.56744289237974 39.330225640648024)", "3906 Parkside Drive", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21206", "1434692.76121", "606148.541891", "Designated Landmarks", "Arcadia", "3", "245102701012000", "4", "NORTHEASTERN", "18S UJ 64902 54594", "Jamie Gerhart", "4103964106", "Department of Planning", "Dr. Giering House", "38_144" ]
+, [ "row-2fei~9359_wy3m", "00000000-0000-0000-2573-1FABA68E53D9", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.60103206237143 39.30790588900039)", "1508 Harford Road", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21202", "1425226.83034", "597975.691111", "Designated Landmarks", "Oliver", "12", "24510909003001", "3", "EASTERN", "18S UJ 61963 52168", "Jamie Gerhart", "4103964106", "Department of Planning", "Harford Commons (William Fuld Company)", "38_145" ]
+, [ "row-mgvv~46cr~smtm", "00000000-0000-0000-8A2B-404EDC63925C", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.65994425723655 39.30205680207875)", "2620 Winchester Street", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21216", "1408564.82954", "595777.791636", "Designated Landmarks", "Bridgeview/Greenlawn", "9", "245101605001002", "7", "WESTERN", "18S UJ 56872 51610", "Jamie Gerhart", "4103964106", "Department of Planning", "Melvin Cade Armory", "38_146" ]
+, [ "row-mn32~bkb9_qgin", "00000000-0000-0000-A19C-CE13C030E404", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.60181827240088 39.30418750611603)", "1201 Harford Road", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21202", "1425010.27007", "596620.369347", "Designated Landmarks", "Oliver", "12", "245101001002000", "3", "EASTERN", "18S UJ 61888 51757", "Jamie Gerhart", "4103964106", "Department of Planning", "Nazarene Baptist Church", "38_147" ]
+, [ "row-zrxm~54bb-387n", "00000000-0000-0000-6329-CEA96BE7EAC0", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.62178638895583 39.29945207197772)", "816 N Eutaw Street", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21201", "1419366.89816", "594871.549682", "Designated Landmarks", "Seton Hill", "11", "245101701001002", "1", "CENTRAL", "18S UJ 60157 51262", "Jamie Gerhart", "4103964106", "Department of Planning", "Mount Calvary Church", "38_148" ]
+, [ "row-fhyb_mzbr~jpdq", "00000000-0000-0000-10F0-6EA8D7819397", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.59127313073068 39.30851596221387)", "1901 E Federal St", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21213", "1427987.24181", "598210.114855", "Designated Landmarks", "Broadway East", "12", "24510807001004", "3", "EASTERN", "18S UJ 62806 52221", "Jamie Gerhart", "4103964106", "Department of Planning", "Saint Paul Community Baptist Church", "38_149" ]
+, [ "row-4bud.6e7i~vn78", "00000000-0000-0000-2E06-557926D212F6", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.6164156478547 39.270172020594)", "107 West Heath Street", "N", "", "0", 1237532400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21230", "1420931.60828", "584213.249804", "Designated Landmarks", "SBIC", "10", "245102303002010", "9", "SOUTHERN", "18S UJ 60562 48004", "Jamie Gerhart", "4103964106", "Department of Planning", "Raffel Building", "38_150" ]
+, [ "row-8hgt~gk3h_3u4z", "00000000-0000-0000-FECD-7C0E73CE9D79", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.64204631216809 39.305249382365886)", "1501 Presstman St", "N", "", "0", 1289894400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21217", "1413625.13796", "596959.993185", "Designated Landmarks", "Sandtown-Winchester", "7", "245101501003006", "0", "WESTERN", "18S UJ 58421 51937", "Jamie Gerhart", "4103964106", "Department of Planning", "Ann Wiggins Brown House", "" ]
+, [ "row-psxy_rd4q.7yxr", "00000000-0000-0000-8E9C-3F894408828E", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.61781122301639 39.29137511620094)", "117 W Lexington St", "Y", "", "0", 1289894400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21201", "1420504.17086", "591934.36455", "Designated Landmarks", "Downtown", "11", "24510401002037", "0", "CENTRAL", "18S UJ 60484 50359", "Jamie Gerhart", "4103964106", "Department of Planning", "Kresge Building", "" ]
+, [ "row-p3fq-bv5v-5r9a", "00000000-0000-0000-33EA-C49895B548EF", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.63538749392805 39.29845725776961)", "801 N Arlington Ave", "N", "", "0", 1289894400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21217", "1415519.28551", "594493.547464", "Designated Landmarks", "Harlem Park", "11", "245101601003000", "0", "WESTERN", "18S UJ 58982 51172", "Jamie Gerhart", "4103964106", "Department of Planning", "Sellers Mansion", "" ]
+, [ "row-tuag_27qz_m9pd", "00000000-0000-0000-E2DF-D9BFD27FB5FE", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.63731989176064 39.32006359566447)", "Druid Hill Park", "N", "", "0", 1289894400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21217", "1414941.15079", "602361.087326", "Designated Landmarks", "Druid Hill Park", "7", "245101304001000", "0", "NORTHERN", "18S UJ 58859 53573", "Jamie Gerhart", "4103964106", "Department of Planning", "Latrobe Pavilion", "" ]
+, [ "row-hkyj_vk3j~xzm6", "00000000-0000-0000-36A3-21C972332416", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.64993835248866 39.3226476569135)", "Druid Hill Park", "N", "", "0", 1289894400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21217", "1411367.60149", "603288.352591", "Designated Landmarks", "Druid Hill Park", "7", "245101304001000", "0", "NORTHERN", "18S UJ 57776 53880", "Jamie Gerhart", "4103964106", "Department of Planning", "Council Grove Pavilion", "" ]
+, [ "row-af4y-8wjd_4mgb", "00000000-0000-0000-11B9-995DD3022D04", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.64575810619048 39.318593218684285)", "Druid Hill Park", "N", "", "0", 1289894400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21217", "1412555.93965", "601816.153053", "Designated Landmarks", "Druid Hill Park", "7", "245101304001000", "0", "NORTHERN", "18S UJ 58128 53423", "Jamie Gerhart", "4103964106", "Department of Planning", "Conservatory", "" ]
+, [ "row-hdd9-ee6q-p469", "00000000-0000-0000-3E14-7702C2BD8915", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.6425583461538 39.31693887068296)", "Druid Hill Park", "N", "", "0", 1289894400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21217", "1413463.57495", "601217.113752", "Designated Landmarks", "Druid Hill Park", "7", "245101304001000", "0", "NORTHERN", "18S UJ 58401 53235", "Jamie Gerhart", "4103964106", "Department of Planning", "Chinese Pavilion", "" ]
+, [ "row-mn4u.4rnj.rz5x", "00000000-0000-0000-86EE-45EF2D1DC195", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.64039313607869 39.315213947526196)", "Druid Hill Park", "N", "", "0", 1289894400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21217", "1414078.64521", "600591.246166", "Designated Landmarks", "Reservoir Hill", "7", "245101304003001", "0", "NORTHERN", "18S UJ 58584 53040", "Jamie Gerhart", "4103964106", "Department of Planning", "Archway over Madison St Entrance", "" ]
+, [ "row-ygg5-ihpv~bt97", "00000000-0000-0000-A6E0-9A6D5E356C64", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.64709864981212 39.32345398645437)", "Druid Hill Park", "N", "", "0", 1289894400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21217", "1412169.82886", "603585.138069", "Designated Landmarks", "Druid Hill Park", "7", "245101304001000", "0", "NORTHERN", "18S UJ 58023 53965", "Jamie Gerhart", "4103964106", "Department of Planning", "Mansion House", "" ]
+, [ "row-83at.4qbu-qw9x", "00000000-0000-0000-579B-9491BF62B2CC", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.6476298855094 39.32128707244832)", "Druid Hill Park", "N", "", "0", 1289894400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21217", "1412022.58851", "602795.294727", "Designated Landmarks", "Druid Hill Park", "7", "245101304001000", "0", "NORTHERN", "18S UJ 57972 53725", "Jamie Gerhart", "4103964106", "Department of Planning", "Boat House", "" ]
+, [ "row-92tc.ppmm.5q32", "00000000-0000-0000-02B7-D1F43A2C0746", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.64190264947938 39.31762614443144)", "Druid Hill Park", "N", "", "0", 1289894400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21217", "1413648.10696", "601468.168516", "Designated Landmarks", "Reservoir Hill", "7", "245101304001000", "0", "NORTHERN", "18S UJ 58459 53310", "Jamie Gerhart", "4103964106", "Department of Planning", "Chess & Checkers Pavilion", "" ]
+, [ "row-hfs5~dvjy.yu45", "00000000-0000-0000-39A0-366492DD2AB7", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.64366366982095 39.32552545174976)", "Druid Hill Park", "N", "", "0", 1289894400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21217", "1413138.64151", "604343.410516", "Designated Landmarks", "Druid Hill Park", "7", "245101304001000", "0", "NORTHERN", "18S UJ 58323 54190", "Jamie Gerhart", "4103964106", "Department of Planning", "Octagonal Pavilion", "" ]
+, [ "row-6igg_zbbq-i386", "00000000-0000-0000-1698-69A0D0261F78", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.64980584649328 39.3205017518699)", "Druid Hill Park", "N", "", "0", 1289894400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21217", "1411408.08631", "602506.885857", "Designated Landmarks", "Druid Hill Park", "7", "245101304001000", "0", "NORTHERN", "18S UJ 57783 53642", "Jamie Gerhart", "4103964106", "Department of Planning", "Unnamed Pavilion #1", "" ]
+, [ "row-9i6a.yzwm.h3sf", "00000000-0000-0000-428C-D124C0D393D2", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.64821624155898 39.322168039196875)", "Druid Hill Park", "N", "", "0", 1289894400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21217", "1411855.46645", "603115.532543", "Designated Landmarks", "Druid Hill Park", "7", "245101304001000", "0", "NORTHERN", "18S UJ 57924 53824", "Jamie Gerhart", "4103964106", "Department of Planning", "Unnamed Pavilion #2", "" ]
+, [ "row-nqu2.t57k-7y62", "00000000-0000-0000-9DFF-3087349F7DB8", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.642424687587 39.3210047398572)", "Druid Hill Park", "N", "", "0", 1289894400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21217", "1413495.58972", "602698.18597", "Designated Landmarks", "Druid Hill Park", "7", "245101304001000", "0", "NORTHERN", "18S UJ 58421 53686", "Jamie Gerhart", "4103964106", "Department of Planning", "Unnamed Pavilion #4", "" ]
+, [ "row-nzad~rbw9-wvrx", "00000000-0000-0000-DA4B-F55CF6E85EDC", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.64017896019001 39.320172311083866)", "Druid Hill Park", "N", "", "0", 1289894400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21217", "1414132.12419", "602397.484178", "Designated Landmarks", "Druid Hill Park", "7", "245101304001000", "0", "NORTHERN", "18S UJ 58612 53590", "Jamie Gerhart", "4103964106", "Department of Planning", "Unnamed Pavilion #5", "" ]
+, [ "row-rxkp~4qpt-m56i", "00000000-0000-0000-520A-430176ED0CB1", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.6472022110279 39.323937247913214)", "Druid Hill Park", "N", "", "0", 1289894400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21217", "1412139.85108", "603761.044937", "Designated Landmarks", "Druid Hill Park", "7", "245101304001000", "0", "NORTHERN", "18S UJ 58015 54019", "Jamie Gerhart", "4103964106", "Department of Planning", "Unnamed Pavilion #3", "" ]
+, [ "row-cjrd_6ept~qi9d", "00000000-0000-0000-DD95-7DD272ED2B2E", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.61402362621536 39.28065792943869)", "701 S Charles St", "N", "", "0", 1289894400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21230", "1421592.67201", "588035.36452", "Designated Landmarks", "Otterbein", "11", "245102201002021", "0", "SOUTHERN", "18S UJ 60789 49164", "Jamie Gerhart", "4103964106", "Department of Planning", "Christ Lutheran Church", "" ]
+, [ "row-psx8.2dnf~agpn", "00000000-0000-0000-419A-143E49F04850", 0, 1450404466, null, 1450404466, null, "{ }", "0", "POINT (-76.60245183800752 39.2839793132922)", "601 S President St", "N", "", "0", 1289894400, "38", "", "CS", "DG_200", "", "Baltimore", "MD", "21202", "1424863.03959", "589259.164279", "Designated Landmarks", "Inner Harbor", "1", "24510302003026", "0", "SOUTHEASTERN", "18S UJ 61794 49515", "Jamie Gerhart", "4103964106", "Department of Planning", "President Street Station", "" ]
+ ]
+}

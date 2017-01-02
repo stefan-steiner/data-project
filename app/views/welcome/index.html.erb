@@ -12,23 +12,6 @@
 
 </head>
 
-<!-- <body ng-controller="CustomControlCtrl as vm">
-
-	<div>
-	  <p>Name : <input type="text" ng-model="name"></p>
-	  <h1>Hello {{name}}</h1>
-	</div>
-
-	<div class="baltimore-map">
-		<ng-map center="[39.29, -76.61]" zoom="13">
-			<custom-control id="center" position="TOP_RIGHT" index="1" on-click="vm.click()">
-      			<div class="center-button">Center</div>
-    		</custom-control>
-		</ng-map>
-	</div>
-    
-</body> -->
-
 <body ng-controller="CustomControlCtrl as vm">
   <div>
 	  <p>Name : <input type="text" ng-model="name"></p>
@@ -41,6 +24,14 @@
     </custom-control>
   </ng-map>
   </div>
+
+  <% @addresses.each do |address| %>
+    <p><%= address %></p>
+  <% end %>
+
 </body>
 
 </html>
+
+
+
