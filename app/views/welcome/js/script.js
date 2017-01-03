@@ -1,23 +1,44 @@
-// This is a manifest file that'll be compiled into application.js, which will include all the files
-// listed below.
-//
-// Any JavaScript/Coffee file within this directory, lib/assets/javascripts, vendor/assets/javascripts,
-// or any plugin's vendor/assets/javascripts directory can be referenced here using a relative path.
-//
-// It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
-// compiled file. JavaScript code in this file should be added after the last require_* statement.
-//
-// Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
-// about supported directives.
-//
-//= require jquery
-//= require jquery_ujs
-//= require turbolinks
-//= require_tree .
-var minDist = 0
-var maxDist = 20
+// var app = angular.module('myApp', ['ngMap']);
+// app.controller('CustomControlCtrl', function(NgMap) {
+//   var vm = this;
+//   var baltimore = new google.maps.LatLng(39.29, -76.61);
+//   NgMap.getMap().then(function(map) {
+//     vm.map = map;
+//   });
+//   vm.click = function() {
+//     vm.map.setCenter(baltimore);
+//     vm.map.setZoom(13);
+//   };
+// });
 
-$(document).ready(function() {
+// angular.module('ngMap').run(function($rootScope) {
+//     $rootScope.directions = gon.pairs
+// });
+
+var app = angular.module('myApp', ['ngMap']);
+app.controller('CustomControlCtrl', function(NgMap) {
+  //window.alert(map.directionsRenderers[0].directions.routes[0].legs[0].distance.text);
+  var vm = this;
+  var baltimore = new google.maps.LatLng(39.29, -76.61);
+  NgMap.getMap().then(function(map) {
+    vm.map = map;
+  });
+  vm.click = function() {
+    vm.map.setCenter(baltimore);
+    vm.map.setZoom(13);
+  };
+
+});
+
+// angular.module('ngMap').run(function($rootScope) {
+//     $rootScope.directions = gon.pairs
+
+// });
+
+var minDist = 0;
+var maxDist = 20;
+
+$( function() {
 	var handle1 = $( "#custom-handle1" );
 	var handle2 = $( "#custom-handle2" );
     $( "#slider-range" ).slider({
@@ -29,23 +50,22 @@ $(document).ready(function() {
       create: function() {
         handle1.text( $( this ).slider( "values", 0 ) );
         handle2.text( $( this ).slider( "values", 1 ) );
-        $( "#amount" ).val("Run " + $( "#slider-range" ).slider( "values", 0 ) + " - " + $( "#slider-range" ).slider( "values", 1 ) + " miles");
+        $( "#amount" ).val($( "#slider-range" ).slider( "values", 0 ) + " - " + $( "#slider-range" ).slider( "values", 1 ) + " miles");
         minDist = Number($( this ).slider( "values", 0 ));
         maxDist = Number($( this ).slider( "values", 1 ));
+
       },
       slide: function( event, ui ) {
-        $( "#amount" ).val("Run " + ui.values[ 0 ] + " - " + ui.values[ 1 ] + " miles");
+        $( "#amount" ).val(ui.values[ 0 ] + " - " + ui.values[ 1 ] + " miles");
         handle1.text( ui.values[0] );
         handle2.text( ui.values[1] );
         minDist = Number(ui.values[0]);
         maxDist = Number(ui.values[1]);
       }
     });
-    $('#button').click(initMap);
-});
+  } );
 
 function initMap() {
-  window.alert('start');
   addresses = gon.addresses;
   pairs = gon.pairs
   destinations = [];
@@ -54,13 +74,17 @@ function initMap() {
     destinations.push(pairs[i].destination);
     origins.push(pairs[i].origin);
   }
-  var include = []
+  //console.log(destinations);
+  //console.log(origins);
+
+
   var origin1 = new google.maps.LatLng(55.930385, -3.118425);
   var origin2 = 'Greenwich, England';
   var destinationA = 'Stockholm, Sweden';
   var destinationB = new google.maps.LatLng(50.087692, 14.421150);
 
   var service = new google.maps.DistanceMatrixService();
+
   service.getDistanceMatrix(
     {
       origins: origins,
@@ -82,24 +106,24 @@ function initMap() {
           var from = origins[i];
           var to = destinations[j];
           var intDist = Number(distance.substring(0, distance.indexOf(" ")));
-          console.log("intDist: " + intDist);
-          console.log("minDist: " + minDist);
-          console.log("maxDist: " + maxDist);
-
-          if ((intDist < maxDist) && (intDist > minDist)) {
-          		console.log(origins[i]);
-          		console.log(destinations[j]);
-
+          if (intDist < maxDist) {
+          	if (intDist > minDist) {
+          		window.alert(intDist);
+          	}
           }
         }
       }
     } else {
-      window.alert(status);
+      window.alert("error");
     }
   }
 }
 
-
+$('#button').click(function() { 
+    window.alert("click");
+    initMap();
+});
 
 // get element id event listener
 //initMap();
+
