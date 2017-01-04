@@ -51,8 +51,10 @@ function initMap() {
   destinations = [];
   origins = [];
   for (i = 0; i < 10; i++) {
-    destinations.push(pairs[i].destination);
-    origins.push(pairs[i].origin);
+  	var index = Math.floor((Math.random() * pairs.length)); //come back to this b/c could select same index
+    // window.alert(index);
+    destinations.push(pairs[index].destination);
+    origins.push(pairs[index].origin);
   }
   var include = [];
 
@@ -74,7 +76,8 @@ function initMap() {
       var destinations = response.destinationAddresses;
       for (var i = 0; i < 10; i++) {
         var results = response.rows[i].elements;
-        //window.alert(results.length);
+        // window.alert("start")
+        // window.alert(results.length);
         for (var j = 0; j < results.length; j++) {
           var element = results[j];
           var distance = element.distance.text;
@@ -97,29 +100,27 @@ function initMap() {
         }
       }
 
-      var directionsDisplay = new google.maps.DirectionsRenderer;
-  	  var directionsService = new google.maps.DirectionsService;
+      var directionsDisplay;
+  	  var directionsService;
+  	  var map;
 
-  	  var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 7,
+	  for (var x = 0; x < 10; x++) {
+      	directionsDisplay = new google.maps.DirectionsRenderer;
+      	directionsService = new google.maps.DirectionsService;
+	  	map = new google.maps.Map(document.getElementById('m' + String(x)), {
+          zoom: 15,
           center: {lat: 39.29, lng: -76.61}
-      });
-	  directionsDisplay.setMap(map);
-	  directionsDisplay.setPanel(document.getElementById('right-panel'));
-	  // var onChangeHandler = function() {
-	  // 	window.alert('start2');
-	  //   calculateAndDisplayRoute(directionsService, directionsDisplay);
-	  // };
-	  // document.getElementById('button').addEventListener('click', onChangeHandler);
-
-	  calculateAndDisplayRoute(directionsService, directionsDisplay);
+      	});
+      	directionsDisplay.setMap(map);
+	    directionsDisplay.setPanel(document.getElementById('rp' + String(x)));
+	  	calculateAndDisplayRoute(directionsService, directionsDisplay);
+	  }
 
 	  function calculateAndDisplayRoute(directionsService, directionsDisplay) {
-	  		window.alert(include);
 	        var start = include[0].start;
 	        var end = include[0].end;
 	        window.alert(start);
-	        window.alert(end);
+	        // window.alert(end);
 	        directionsService.route({
 	          origin: start,
 	          destination: end,
