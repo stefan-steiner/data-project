@@ -14,14 +14,14 @@ class WelcomeController < ApplicationController
 
 		# find all monument pairs
 		@pairs = []
-		(0..10).each do |i|
-			(i+1..11).each do |j|
-				@pairs << {origin:@addresses[i], destination:@addresses[j], panelName:"p"+j.to_s}
+		(0..@count-2).each do |i|
+			(i+1..@count-1).each do |j|
+				if @addresses[i] != @addresses[j]
+					@pairs << { origin:@addresses[i], destination:@addresses[j] }
+				end
 			end
 		end
 		gon.pairs = @pairs
-
-		@first = @addresses[0]
 	end
 	
 	def show
