@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
 var minDist = 0
 var maxDist = 20
 
@@ -45,22 +46,21 @@ $(document).ready(function() {
 });
 
 function initMap() {
-  window.alert('start');
-  addresses = gon.addresses;
-  pairs = gon.pairs
+  //window.alert('start');
+  pairs = gon.pairs // all possible pairs of addresses
   destinations = [];
   origins = [];
   for (i = 0; i < 10; i++) {
     destinations.push(pairs[i].destination);
     origins.push(pairs[i].origin);
   }
-  var include = []
-  var origin1 = new google.maps.LatLng(55.930385, -3.118425);
-  var origin2 = 'Greenwich, England';
-  var destinationA = 'Stockholm, Sweden';
-  var destinationB = new google.maps.LatLng(50.087692, 14.421150);
+  var include = [];
 
   var service = new google.maps.DistanceMatrixService();
+
+
+
+
   service.getDistanceMatrix(
     {
       origins: origins,
@@ -87,16 +87,60 @@ function initMap() {
           console.log("maxDist: " + maxDist);
 
           if ((intDist < maxDist) && (intDist > minDist)) {
+          		//window.alert('got one');
           		console.log(origins[i]);
           		console.log(destinations[j]);
+          		var route = { start:origins[i], end:destinations[j], dist:intDist };
+          		include.push(route);
 
           }
         }
       }
+
+      var directionsDisplay = new google.maps.DirectionsRenderer;
+  	  var directionsService = new google.maps.DirectionsService;
+
+  	  var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 7,
+          center: {lat: 39.29, lng: -76.61}
+      });
+	  directionsDisplay.setMap(map);
+	  directionsDisplay.setPanel(document.getElementById('right-panel'));
+	  // var onChangeHandler = function() {
+	  // 	window.alert('start2');
+	  //   calculateAndDisplayRoute(directionsService, directionsDisplay);
+	  // };
+	  // document.getElementById('button').addEventListener('click', onChangeHandler);
+
+	  calculateAndDisplayRoute(directionsService, directionsDisplay);
+
+	  function calculateAndDisplayRoute(directionsService, directionsDisplay) {
+	  		window.alert(include);
+	        var start = include[0].start;
+	        var end = include[0].end;
+	        window.alert(start);
+	        window.alert(end);
+	        directionsService.route({
+	          origin: start,
+	          destination: end,
+	          travelMode: 'WALKING'
+	        }, function(response, status) {
+	          if (status === 'OK') {
+	            directionsDisplay.setDirections(response);
+	          } else {
+	            window.alert('Directions request failed due to ' + status);
+	          }
+	        });
+	      }
     } else {
       window.alert(status);
     }
   }
+
+  
+
+  
+
 }
 
 
