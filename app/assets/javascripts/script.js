@@ -15,12 +15,12 @@ $(document).ready(function() {
     create: function() {
       handle1.text( $( this ).slider( "values", 0 ) );
       handle2.text( $( this ).slider( "values", 1 ) );
-      $( "#amount" ).val("Run " + $( "#slider-range" ).slider( "values", 0 ) + " - " + $( "#slider-range" ).slider( "values", 1 ) + " miles");
+      $( "#amount" ).val("I want to run " + $( "#slider-range" ).slider( "values", 0 ) + " - " + $( "#slider-range" ).slider( "values", 1 ) + " miles.");
       minDist = Number($( this ).slider( "values", 0 ));
       maxDist = Number($( this ).slider( "values", 1 ));
     },
     slide: function( event, ui ) {
-      $( "#amount" ).val("Run " + ui.values[ 0 ] + " - " + ui.values[ 1 ] + " miles");
+      $( "#amount" ).val("I want to run " + ui.values[ 0 ] + " - " + ui.values[ 1 ] + " miles.");
       handle1.text( ui.values[0] );
       handle2.text( ui.values[1] );
       minDist = Number(ui.values[0]);
@@ -32,14 +32,25 @@ $(document).ready(function() {
     initMap(false);
   });
 
+  var nav = $(".nav-bar");
+  var navtop = nav.offset().top;
+
+  $(window).scroll(function() {
+    console.log($(window).scrollTop());
+    if ($(window).scrollTop() > navtop) {
+      nav.addClass("nav-scrolled");
+    } else {
+      nav.removeClass("nav-scrolled");
+    }
+  });
+
 });
 
 function findDistances() {
   pairs = gon.pairs; // all possible pairs of addresses
   destinations = [];
   origins = [];
-  window.alert("here3");
-  window.alert(pairs.length);
+
   for (i = 0; i < 10; i++) {
     var index = Math.floor((Math.random() * pairs.length)); //come back to this b/c could select same index
     destinations.push(pairs[index].destination);
@@ -143,6 +154,7 @@ function initMap(refresh) {
         center: {lat: 39.29, lng: -76.61}
       });
       directionsDisplay.setMap(map);
+      document.getElementById('rp' + String(x)).innerHTML = "";
       directionsDisplay.setPanel(document.getElementById('rp' + String(x)));
       var start = include[x].start;
       var end = include[x].end;
