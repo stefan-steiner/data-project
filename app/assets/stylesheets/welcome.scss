@@ -24,6 +24,7 @@ body, html {
     width: 100%;
 }
 
+
 #slider-range .ui-slider-range { background: #8ae234; }
 
 #slider-range .ui-slider-handle { 
@@ -87,6 +88,13 @@ body, html {
 }
 
 //frames
+
+#loading {
+    width: 180px;
+    height: 246px;
+    margin: auto;
+    padding-top: 10px;
+}
 .map {
     height: 100%;
     margin-right: 400px;
@@ -153,5 +161,10 @@ body, html {
   float: none;
   width: auto;
 }
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
 }
 

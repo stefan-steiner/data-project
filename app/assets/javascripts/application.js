@@ -16,3 +16,5 @@
 //= require_tree .
 
 //= script.js
+//= findDistances.js
+//= initMap.js
