@@ -47,7 +47,7 @@ body, html {
 // nav bar
 
 #header {
-	height: 500px;
+	height: 400px;
 	padding: 0px 200px;
 }
 .nav-bar {
@@ -87,25 +87,42 @@ body, html {
 }
 
 //frames
+
+#loading {
+	position: absolute;
+    width: 160px;
+    height: 120px;
+    margin-left: 370px;
+    margin-top: 100px;
+}
+
 .map {
-    height: 100%;
+    height: 700px;
     margin-right: 400px;
 }
 
-#margins {
-	background-color: lightblue;
-	height: 5000px;
-	margin: 0;
-	padding: 0;
-}
+// .margins {
+// 	background-color: lightblue;
+// 	margin: 0;
+// 	padding: 0;
 
-#all {
-	background-color: white;
-	margin: auto;
-	width: 900px;
-	height: 100%;
-	padding: 0;
-}
+// }
+
+// .margins-short {
+// 	height: 500px;
+// }
+
+// .margins-long{
+// 	height: 5000px;
+// }
+
+// #all {
+// 	background-color: white;
+// 	margin: auto;
+// 	width: 900px;
+// 	height: 100%;
+// 	padding: 0;
+// }
 
 .frame {
 	padding: 30px 10px;
@@ -140,6 +157,7 @@ body, html {
 // width: 390px;
 // overflow: auto;
 // }
+
 // .map {
 // margin-right: 400px;
 // }
@@ -153,5 +171,11 @@ body, html {
   float: none;
   width: auto;
 }
+}
+
+.hideRight {
+	position: absolute;
+	left: -100%;
+	top: -100%;
 }
 
