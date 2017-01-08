@@ -8,8 +8,15 @@ class WelcomeController < ApplicationController
 		@monuments = JSON.parse(file)
 		@monuments["data"].each do |monument|
 			# @count += 1
-			@addresses << { address:monument[10], name:monument[35] }
+			@addresses << { address:monument[10] + " Baltimore, MD", name:monument[35] }
 			# @names << monument[35]
+		end
+		file = File.read('app/assets/parks.json')
+		@parks = JSON.parse(file)
+		@parks["data"].each do |park|
+			if (park[11][0])
+				@addresses << { address:park[11][0].split(/:|,/)[1][1..-2] + " Baltimore, MD", name:park[8] }
+			end
 		end
 		# gon.count = @count
 		gon.addresses = @addresses

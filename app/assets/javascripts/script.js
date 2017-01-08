@@ -1,5 +1,5 @@
 var minDist = 0;
-var maxDist = 20;
+var maxDist = 10;
 
 var routes = [];
 var include = [];
@@ -17,7 +17,7 @@ $(document).ready(function() {
     min: minDist,
     max: maxDist,
     step: 0.1,
-    values: [ 4.0, 6.0],
+    values: [ 1.0, 5.0],
     create: function() {
       handle1.text( $( this ).slider( "values", 0 ) );
       handle2.text( $( this ).slider( "values", 1 ) );

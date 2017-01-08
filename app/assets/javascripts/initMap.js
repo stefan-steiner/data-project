@@ -10,8 +10,6 @@ function initMap() {
   var includeAll = [];
   window.alert("here1");
   window.alert(routes.length);
-  window.alert(routes[0].startName);
-  window.alert(routes[1].startName); 
 
   for (var r = 0; r < routes.length; r++) {
     if (routes[r].dist <= maxDist && routes[r].dist >= minDist) {

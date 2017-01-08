@@ -1,6 +1,6 @@
 function findDistances() {
   // pairs = gon.pairs; // all possible pairs of addresses
-  window.alert("finddist");
+  //window.alert("finddist");
   addresses = gon.addresses
   destinations = [];
   origins = [];
@@ -31,24 +31,24 @@ function findDistances() {
       }
     }
   } else {
-    window.alert($("#search input").val());
-    window.alert($("#search input").val().toString());
-    window.alert(addresses[0].name);
-    window.alert(addresses[0].name.toString());
-    window.alert(addresses[0].name.toString().toLowerCase() == $("#search input").val().toString().toLowerCase());
-    window.alert("City Hall" == "City Hall");
+    //window.alert($("#search input").val());
+    //window.alert($("#search input").val().toString());
+    //window.alert(addresses[0].name);
+    //window.alert(addresses[0].name.toString());
+    //window.alert(addresses[0].name.toString().toLowerCase() == $("#search input").val().toString().toLowerCase());
+    //window.alert("City Hall" == "City Hall");
     for (var i = 0; i < addresses.length; i++) {
       var a = addresses[i];
       if (a.name.toString().toLowerCase() == $("#search input").val().toString().toLowerCase()) {
-        window.alert("found");
-        window.alert(a.name);
+        //window.alert("found");
+        //window.alert(a.name);
         origins.push(a.address);
         originNames.push(a.name);
         seen.add(a.address);
         break;
       }
     }
-    window.alert("finished search");
+    //window.alert("finished search");
     for (i = 0; i < 25; i++) {
       var index = Math.floor((Math.random() * addresses.length));
       var a = addresses[index];
@@ -74,13 +74,13 @@ function findDistances() {
     if (status == 'OK') {
       var origins = response.originAddresses;
       var destinations = response.destinationAddresses;
-      window.alert("here");
-      window.alert(origins.length);
+      //window.alert("here");
+      //window.alert(origins.length);
       for (var i = 0; i < origins.length; i++) {
         if (response.rows[i] != null) {
           var results = response.rows[i].elements;
-          // window.alert(results.length);
-          window.alert(results.length);
+          // //window.alert(results.length);
+          //window.alert(results.length);
           for (var j = 0; j < results.length; j++) {
             var element = results[j];
             if (element.status == 'OK') {
@@ -102,7 +102,7 @@ function findDistances() {
         }
       }
     } else {
-        window.alert(status);
+        //window.alert(status);
     }
   }
 }

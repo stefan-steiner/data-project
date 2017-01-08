@@ -19,11 +19,20 @@
 // }
 
 body, html {
+	font-family: 'Roboto','sans-serif';
     margin: 0;
     padding: 0;
     width: 100%;
 }
 
+#page-title {
+	font-family: 'Bungee Shade', cursive;
+	padding: 0px 200px;
+    font-size: 100px;
+    text-align: right;
+    background-color: rgba(0, 116, 217, 0.58);
+    padding-bottom: 15px;
+}
 
 #slider-range .ui-slider-range { background: #8ae234; }
 
@@ -41,15 +50,17 @@ body, html {
 	width: 100%;
 	border: 0; 
 	font-size: 70px;
-    margin-top: 100px;
+    margin-top: 40px;
     margin-bottom: 20px;
+    background-color: #d3d3d3;
 }
 
 // nav bar
 
 #header {
-	height: 400px;
+	height: 300px;
 	padding: 0px 200px;
+	background-color: #d3d3d3;
 }
 .nav-bar {
 	margin-top: -60px;
@@ -73,15 +84,20 @@ body, html {
     display: inline-block;
 	width: 200px;
     height: 100%;
-    border-right: 2px solid darkgray;
-    background-color: lightgray;
+    border-right: 3px solid #666666;
+    background-color: #8ae234;
     cursor: pointer;
+    text-align: center;
+    line-height: 60px;
+    font-size: 30px;
 }
 
-#search {    
+#search {
+	padding-left: 20px;  
 	font-size: 30px;
     display: inline-block;
     position: absolute;
+    line-height: 60px;
     input {
     	font-size: 30px;
 		background-color: #b3b3b3;
@@ -103,10 +119,10 @@ body, html {
 //frames
 
 #loading {
-    width: 180px;
-    height: 246px;
+    width: 90px;
+    height: 123px;
     margin: auto;
-    padding-top: 10px;
+    padding-top: 25px;
 }
 .map {
     height: 100%;
@@ -115,7 +131,7 @@ body, html {
 
 
 #margins {
-	background-color: lightblue;
+	background-color: rgba(0, 116, 217, 0.58);
 	height: 6840px;
 	margin: 0;
 	padding: 0;
