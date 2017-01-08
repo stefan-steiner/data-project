@@ -17,9 +17,15 @@ function initMap() {
 
 
   if (includeAll.length == 0) {
+    $("#sort").css({"display": "none"});
+    $("body").addClass("stop-scrolling");
     window.alert("no results");
-    $("#no-results").show();
+    $("#no-results").css({"display": "block"});
+    findDistances();
     return;
+  } else {
+    $("#no-results").css({"display": "none"});
+    $("#sort").css({"display": "unset"});
   }
 
   if (includeAll.length > 9) {
@@ -50,6 +56,11 @@ function sortAndUpdateRoutes(include) {
     include.sort(function(a, b){return b.dist-a.dist});
   }
 
+  for (var x = 0; x < 9; x++) {
+    document.getElementById('m' + String(x)).innerHTML = "";
+    document.getElementById('rp' + String(x)).innerHTML = "";
+  }
+
   for (var x = 0; x < include.length; x++) {
     var directionsDisplay = new google.maps.DirectionsRenderer;
     var directionsService = new google.maps.DirectionsService;
@@ -58,7 +69,7 @@ function sortAndUpdateRoutes(include) {
       center: {lat: 39.29, lng: -76.61}
     });
     directionsDisplay.setMap(map);
-    document.getElementById('rp' + String(x)).innerHTML = "";
+    // document.getElementById('rp' + String(x)).innerHTML = "";
     directionsDisplay.setPanel(document.getElementById('rp' + String(x)));
     var start = include[x].start;
     var end = include[x].end;

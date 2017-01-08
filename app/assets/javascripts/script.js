@@ -1,13 +1,15 @@
 var minDist = 0;
 var maxDist = 20;
-var routes;
 
+var routes = [];
 var include = [];
 
 
 
 $(document).ready(function() {
+  $("#sort").css({"display": "none"});
   $("body").addClass("stop-scrolling");
+  $("#no-results").css({"display": "none"});
   var handle1 = $( "#custom-handle1" );
   var handle2 = $( "#custom-handle2" );
   $( "#slider-range" ).slider({
@@ -53,6 +55,5 @@ $(document).ready(function() {
       nav.removeClass("nav-scrolled");
     }
   });
-
 });
 

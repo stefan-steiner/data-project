@@ -100,10 +100,18 @@ body, html {
     margin-right: 400px;
 }
 
+
 #margins {
 	background-color: lightblue;
-	height: 5000px;
+	height: 6840px;
 	margin: 0;
+	padding: 0;
+}
+#no-results {
+	background-color: white;
+	margin: auto;
+	width: 900px;
+	height: 500px;
 	padding: 0;
 }
 
