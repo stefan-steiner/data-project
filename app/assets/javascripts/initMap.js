@@ -58,7 +58,7 @@ function sortAndUpdateRoutes(include) {
 
   for (var x = 0; x < 9; x++) {
     document.getElementById('m' + String(x)).innerHTML = "";
-    document.getElementById('rp' + String(x)).innerHTML = "";
+    document.getElementById('rp' + String(x)).innerHTML = "<h1></h1><h2></h2>";
   }
 
   for (var x = 0; x < include.length; x++) {
@@ -71,6 +71,9 @@ function sortAndUpdateRoutes(include) {
     directionsDisplay.setMap(map);
     // document.getElementById('rp' + String(x)).innerHTML = "";
     directionsDisplay.setPanel(document.getElementById('rp' + String(x)));
+    var title = include[x].startName + " to " + include[x].endName;
+    $("#rp" + String(x) + " h1").html(title);
+    $("#rp" + String(x) + " h2").html(String(include[x].dist) + " mi");
     var start = include[x].start;
     var end = include[x].end;
     calculateAndDisplayRoute(directionsService, directionsDisplay, start, end);
