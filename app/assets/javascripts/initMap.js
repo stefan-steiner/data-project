@@ -10,7 +10,9 @@ function initMap() {
 
   for (var r = 0; r < routes.length; r++) {
     if (routes[r].dist <= maxDist && routes[r].dist >= minDist) {
-      includeAll.push(routes[r]);
+      if (!$("#search input").val() || $("#search input").val() == routes[r].originName) {
+        includeAll.push(routes[r]);
+      }
     }
   }
   window.alert(includeAll.length);

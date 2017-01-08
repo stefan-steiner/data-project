@@ -78,6 +78,19 @@ body, html {
     cursor: pointer;
 }
 
+#search {    
+	font-size: 30px;
+    display: inline-block;
+    position: absolute;
+    input {
+    	font-size: 30px;
+		background-color: #b3b3b3;
+    	border: none;
+    	border-bottom-width: 2px;
+    	border-bottom-style: solid;
+    }
+}
+
 #sort {
 	display: inline-block;
 	right: 0px;
