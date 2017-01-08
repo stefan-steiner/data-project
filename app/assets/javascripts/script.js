@@ -55,5 +55,21 @@ $(document).ready(function() {
       nav.removeClass("nav-scrolled");
     }
   });
+
+  var timerid;
+  $("#searchInput").on("input",function(e) {
+    var value = $(this).val();
+    if($(this).data("lastval")!= value){
+      $(this).data("lastval",value);
+        clearTimeout(timerid);
+        timerid = setTimeout(function() {
+          window.alert("changed");
+          window.alert($("#searchInput").val());
+          findDistances();
+        },500);
+    };
+  });
+
+
 });
 

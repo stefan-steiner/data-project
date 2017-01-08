@@ -8,7 +8,7 @@ function findDistances() {
   originNames = [];
   var seen = new Set();
   if (!$("#search input").val()) {
-    for (i = 0; i < 10; i++) {
+      for (i = 0; i < 10; i++) {
       var index = Math.floor((Math.random() * addresses.length));
       var a = addresses[index];
       if (!seen.has(a.address)) {
@@ -31,15 +31,24 @@ function findDistances() {
       }
     }
   } else {
+    window.alert($("#search input").val());
+    window.alert($("#search input").val().toString());
+    window.alert(addresses[0].name);
+    window.alert(addresses[0].name.toString());
+    window.alert(addresses[0].name.toString().toLowerCase() == $("#search input").val().toString().toLowerCase());
+    window.alert("City Hall" == "City Hall");
     for (var i = 0; i < addresses.length; i++) {
       var a = addresses[i];
-      if (a.name == $("#search input").val()) {
+      if (a.name.toString().toLowerCase() == $("#search input").val().toString().toLowerCase()) {
+        window.alert("found");
+        window.alert(a.name);
         origins.push(a.address);
         originNames.push(a.name);
         seen.add(a.address);
         break;
       }
     }
+    window.alert("finished search");
     for (i = 0; i < 25; i++) {
       var index = Math.floor((Math.random() * addresses.length));
       var a = addresses[index];
@@ -65,10 +74,13 @@ function findDistances() {
     if (status == 'OK') {
       var origins = response.originAddresses;
       var destinations = response.destinationAddresses;
+      window.alert("here");
+      window.alert(origins.length);
       for (var i = 0; i < origins.length; i++) {
         if (response.rows[i] != null) {
           var results = response.rows[i].elements;
           // window.alert(results.length);
+          window.alert(results.length);
           for (var j = 0; j < results.length; j++) {
             var element = results[j];
             if (element.status == 'OK') {
@@ -80,11 +92,12 @@ function findDistances() {
               var route = { start:origins[i], end:destinations[j], dist:intDist, startName:originNames[i], endName:destinationNames[j] };
               routes.push(route);
             } else {
+              console.log("dest-error");
               console.log(element.status);
             }
           }
         } else {
-          console.log("here");
+          console.log("origin-error");
           console.log(response.rows.status);
         }
       }

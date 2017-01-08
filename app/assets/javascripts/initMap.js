@@ -2,21 +2,32 @@
 // refresh: new Distance Matrix request
 
 function initMap() {
+  // if ($("#search input").val()) {
+  //   findDistances();
+  // }
 
   include = [];
   var includeAll = [];
-
+  window.alert("here1");
   window.alert(routes.length);
+  window.alert(routes[0].startName);
+  window.alert(routes[1].startName); 
 
   for (var r = 0; r < routes.length; r++) {
     if (routes[r].dist <= maxDist && routes[r].dist >= minDist) {
-      if (!$("#search input").val() || $("#search input").val() == routes[r].originName) {
+      if (!$("#search input").val() || $("#search input").val().toLowerCase() == routes[r].startName.toLowerCase()) {
         includeAll.push(routes[r]);
       }
     }
   }
+
   window.alert(includeAll.length);
 
+  if ($("#search input").val()) {
+    $("#search input").val('');
+    window.alert("input val reset");
+    window.alert($("#search input").val());
+  }
 
   if (includeAll.length == 0) {
     $("#sort").css({"display": "none"});
@@ -73,6 +84,12 @@ function sortAndUpdateRoutes(include) {
     directionsDisplay.setMap(map);
     // document.getElementById('rp' + String(x)).innerHTML = "";
     directionsDisplay.setPanel(document.getElementById('rp' + String(x)));
+    if (include[x].startName == 'undefined') {
+      include[x].startName = "Monument";
+    }
+    if (include[x].endName == 'undefined') {
+      include[x].endName = "Monument";
+    }
     var title = include[x].startName + " to " + include[x].endName;
     $("#rp" + String(x) + " h1").html(title);
     $("#rp" + String(x) + " h2").html(String(include[x].dist) + " mi");
