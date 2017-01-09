@@ -9,7 +9,7 @@ function initMap() {
   // Check ranges and search params
   for (var r = 0; r < routes.length; r++) {
     if (routes[r].dist <= maxDist && routes[r].dist >= minDist) {
-     if (!$("#search input").val() || routes[r].startName.toLowerCase().includes($("#search input").val().toLowerCase())) {
+     if (!$("#search input").val() || (routes[r].startName && routes[r].startName.toLowerCase().includes($("#search input").val().toLowerCase()))) {
         includeAll.push(routes[r]);
       }
     }
