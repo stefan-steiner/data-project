@@ -1,5 +1,7 @@
 // Takes all available data as addresses, filters by search input, and runs the Google Distance Matrix
 
+var stackDist = true;
+
 function findDistances() {
   clickable = false;
   // window.alert("finddist");
@@ -96,8 +98,18 @@ function findDistances() {
       }
       clickable = true;
     } else {
+      if (stackDist) {
+        stackDist = false;
+        setTimeout(function () {
+          stackDist = true;
+          findDistances();
+        }, 1000);
+      } else {
+        window.alert(status);
+        return;
+      }
       // window.alert(status);
-      setTimeout(findDistances(), 300);
+      // setTimeout(findDistances(), 1000);
     }
   }
 }

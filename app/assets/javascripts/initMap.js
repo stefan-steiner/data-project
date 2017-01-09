@@ -1,5 +1,7 @@
 // Updates visible results
 
+var stackMap = true;
+
 function initMap() {
   include = [];
   var includeAll = [];
@@ -51,7 +53,6 @@ function initMap() {
 
 // Render included routes
 function sortAndUpdateRoutes(include) {
-  var stackSize = 0;
   if (document.getElementById('sort').value == "increasing") {
     include.sort(function(a, b){return a.dist-b.dist});
   } else {
@@ -96,9 +97,15 @@ function sortAndUpdateRoutes(include) {
         if (status === 'OK') {
           directionsDisplay.setDirections(response);
         } else {
-          if (stackSize < 3) {
-            setTimeout(calculateAndDisplayRoute(directionsService, directionsDisplay, start, end), 1000);
-            stackSize += 1;
+          if (stackMap) {
+            stackMap = false;
+            setTimeout(function () {
+              stackMap = true;
+              calculateAndDisplayRoute(directionsService, directionsDisplay, start, end);
+            }, 1000);
+          } else {
+            window.alert(status);
+            return;
           }
         }
     });
