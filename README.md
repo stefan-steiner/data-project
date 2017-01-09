@@ -2,6 +2,8 @@
 
 To deploy:
 
+* Make sure that you are using Rails 5 with `rails -v`
+
 * Clone the repository with `git clone https://github.com/stefan-steiner/data-project.git`
 
 * Enter the project directory with `cd data-project`
