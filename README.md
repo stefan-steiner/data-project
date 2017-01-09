@@ -1,24 +1,22 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+To deploy:
 
-Things you may want to cover:
+* Clone the repository with `<git clone https://github.com/stefan-steiner/data-project.git>`
 
-* Ruby version
+* Enter the project directory with `<cd data-project>`
 
-* System dependencies
+* Install neccessary gems with `<bundle install>`
 
-* Configuration
+* Run the server with `<rails s>`
 
-* Database creation
+* Navigate to `<localhost:3000>` in your browser
 
-* Database initialization
 
-* How to run the test suite
+This web application uses datasets from [OpenData Baltimore](https://data.baltimorecity.gov/). It is designed to find routes to and from various landmarks and parks in Baltimore. The user is able to flter, search, and order results.
 
-* Services (job queues, cache servers, search engines, etc.)
+Some functionality is limited by the need to dynamically request directions and distances from the Google Maps API. Randomness is added to reduce the size of these requests.
 
-* Deployment instructions
+Any feedback is greatly appreciated.
 
-* ...
+Enjoy!
