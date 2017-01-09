@@ -1,6 +1,9 @@
+// Takes all available data as addresses, filters by search input, and runs the Google Distance Matrix
+
 function findDistances() {
-  // pairs = gon.pairs; // all possible pairs of addresses
-  window.alert("finddist");
+  clickable = false;
+  // window.alert("finddist");
+  updated = true;
   addresses = gon.addresses
   destinations = [];
   origins = [];
@@ -15,8 +18,7 @@ function findDistances() {
         origins.push(a.address);
         originNames.push(a.name);
         seen.add(a.address);
-
-        console.log(a.address);
+        // console.log(a.address);
       }
     }
     for (i = 0; i < 10; i++) {
@@ -26,29 +28,20 @@ function findDistances() {
         destinations.push(a.address);
         destinationNames.push(a.name);
         seen.add(a.address);
-
-        console.log(a.address);
+        // console.log(a.address);
       }
     }
   } else {
-    //window.alert($("#search input").val());
-    //window.alert($("#search input").val().toString());
-    //window.alert(addresses[0].name);
-    //window.alert(addresses[0].name.toString());
-    //window.alert(addresses[0].name.toString().toLowerCase() == $("#search input").val().toString().toLowerCase());
-    //window.alert("City Hall" == "City Hall");
     for (var i = 0; i < addresses.length; i++) {
       var a = addresses[i];
       if (a.name.toString().toLowerCase().includes($("#search input").val().toString().toLowerCase())) {
-        //window.alert("found");
-        //window.alert(a.name);
         origins.push(a.address);
         originNames.push(a.name);
         seen.add(a.address);
+        // console.log(a.address);
         break;
       }
     }
-    //window.alert("finished search");
     for (i = 0; i < 25; i++) {
       var index = Math.floor((Math.random() * addresses.length));
       var a = addresses[index];
@@ -56,12 +49,15 @@ function findDistances() {
         destinations.push(a.address);
         destinationNames.push(a.name);
         seen.add(a.address);
-
-        console.log(a.address);
+        // console.log(a.address);
       }
     }
   }
   routes = [];
+  if (origins.length == 0 || destinations.length == 0) {
+    clickable = true;
+    return;
+  }
   var service = new google.maps.DistanceMatrixService();
   service.getDistanceMatrix(
   {
@@ -74,31 +70,22 @@ function findDistances() {
     if (status == 'OK') {
       var origins = response.originAddresses;
       var destinations = response.destinationAddresses;
-      //window.alert("here");
-      //window.alert(origins.length);
       for (var i = 0; i < origins.length; i++) {
         if (response.rows[i] != null) {
           var results = response.rows[i].elements;
-          // //window.alert(results.length);
-          //window.alert(results.length);
           for (var j = 0; j < results.length; j++) {
             var element = results[j];
             if (element.status == 'OK') {
               var distance = element.distance.text;
-              var duration = element.duration.text;
-              var from = origins[i];
-              var to = destinations[j];
               var intDist = Number(distance.substring(0, distance.indexOf(" ")));
               if (distance.split(" ")[1] == "ft") {
-                window.alert("ft");
                 intDist = intDist / 5280;
                 intDist = Math.round(intDist * 100) / 100
-                window.alert(intDist);
               }
               var route = { start:origins[i], end:destinations[j], dist:intDist, startName:originNames[i], endName:destinationNames[j] };
               routes.push(route);
             } else {
-              console.log("dest-error");
+              console.log("destination-error");
               console.log(element.status);
             }
           }
@@ -107,8 +94,10 @@ function findDistances() {
           console.log(response.rows.status);
         }
       }
+      clickable = true;
     } else {
-        //window.alert(status);
+      // window.alert(status);
+      setTimeout(findDistances(), 300);
     }
   }
 }

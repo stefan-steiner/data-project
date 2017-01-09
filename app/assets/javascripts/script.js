@@ -1,15 +1,27 @@
+// Script for page load and global variables
+
+// Go button clickable
+var clickable = true;
+
+// Minimum range
 var minDist = 0;
+
+// Maximum range
 var maxDist = 10;
 
+// List of all valid routes with starting address and name, ending address and name, and distance.
 var routes = [];
+
+// List of all routes that satisfy the range set by the user and can be displayed in the available divs.
 var include = [];
 
-
-
+// Initialization script
 $(document).ready(function() {
   $("#sort").css({"display": "none"});
   $("body").addClass("stop-scrolling");
   $("#no-results").css({"display": "none"});
+
+  // Slider
   var handle1 = $( "#custom-handle1" );
   var handle2 = $( "#custom-handle2" );
   $( "#slider-range" ).slider({
@@ -34,20 +46,26 @@ $(document).ready(function() {
     }
   });
 
+  // Go button
   $('#button').click(function() {
-    $("body").removeClass("stop-scrolling");
-    $("#loading").hide();
-    initMap();
+    if (clickable) {
+      clickable = false;
+      $("body").removeClass("stop-scrolling");
+      $("#loading").hide();
+      initMap();
+    } else {
+      console.log("unclickable");
+    }
   });
 
+  // Sorting
   $('#sort').change(function () {
-    window.alert("sorted");
     sortAndUpdateRoutes(include);
   });
 
+  // Navigaton bar
   var nav = $(".nav-bar");
   var navtop = nav.offset().top;
-
   $(window).scroll(function() {
     if ($(window).scrollTop() > navtop) {
       nav.addClass("nav-scrolled");
@@ -56,18 +74,19 @@ $(document).ready(function() {
     }
   });
 
+  // Search bar updates after typing
   var timerid;
   $("#searchInput").on("input",function(e) {
     var value = $(this).val();
     if($(this).data("lastval")!= value){
       $(this).data("lastval",value);
-        clearTimeout(timerid);
-        timerid = setTimeout(function() {
-          findDistances();
-        },500);
+      clearTimeout(timerid);
+      timerid = setTimeout(function() {
+        findDistances();
+      },500);
     };
   });
 
-
+  // unitTests();
 });
 

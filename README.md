@@ -17,6 +17,8 @@ This web application uses datasets from [OpenData Baltimore](https://data.baltim
 
 Some functionality is limited by the need to dynamically request directions and distances from the Google Maps API. Randomness is added to reduce the size of these requests.
 
+Testing scripts can be run by calling the function unitTests, or uncommenting line 90 in script.js.
+
 Any feedback is greatly appreciated.
 
 Enjoy!

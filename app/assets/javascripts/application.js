@@ -18,3 +18,4 @@
 //= script.js
 //= findDistances.js
 //= initMap.js
+//= test.js

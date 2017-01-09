@@ -1,16 +1,10 @@
-// Update results
-// refresh: new Distance Matrix request
+// Updates visible results
 
 function initMap() {
-  // if ($("#search input").val()) {
-  //   findDistances();
-  // }
-
   include = [];
   var includeAll = [];
-  // window.alert("here1");
-  // window.alert(routes.length);
 
+  // Check ranges and search params
   for (var r = 0; r < routes.length; r++) {
     if (routes[r].dist <= maxDist && routes[r].dist >= minDist) {
      if (!$("#search input").val() || routes[r].startName.toLowerCase().includes($("#search input").val().toLowerCase())) {
@@ -19,18 +13,15 @@ function initMap() {
     }
   }
 
-  // window.alert(includeAll.length);
-
+  // Reset search bar
   if ($("#search input").val()) {
     $("#search input").val('');
-    window.alert("input val reset");
-    window.alert($("#search input").val());
   }
 
+  // Check for and handle no results
   if (includeAll.length == 0) {
     $("#sort").css({"display": "none"});
     $("body").addClass("stop-scrolling");
-    window.alert("no results");
     $("#no-results").css({"display": "block"});
     findDistances();
     return;
@@ -39,6 +30,7 @@ function initMap() {
     $("#sort").css({"display": "unset"});
   }
 
+  // Only display at most 9 routes
   if (includeAll.length > 9) {
     var seen = new Set();
     for (var x = 0; x < 9; x++) {
@@ -53,25 +45,22 @@ function initMap() {
   }
 
   sortAndUpdateRoutes(include);
-
-  findDistances(); //update routes after b/c of initial callback
+  findDistances()
 
 }
 
 // Render included routes
 function sortAndUpdateRoutes(include) {
-
+  var stackSize = 0;
   if (document.getElementById('sort').value == "increasing") {
     include.sort(function(a, b){return a.dist-b.dist});
   } else {
     include.sort(function(a, b){return b.dist-a.dist});
   }
-
   for (var x = 0; x < 9; x++) {
     document.getElementById('m' + String(x)).innerHTML = "";
     document.getElementById('rp' + String(x)).innerHTML = "<p></p><h2></h2>";
   }
-
   for (var x = 0; x < include.length; x++) {
     var directionsDisplay = new google.maps.DirectionsRenderer;
     var directionsService = new google.maps.DirectionsService;
@@ -80,17 +69,16 @@ function sortAndUpdateRoutes(include) {
       center: {lat: 39.29, lng: -76.61}
     });
     directionsDisplay.setMap(map);
-    // document.getElementById('rp' + String(x)).innerHTML = "";
     directionsDisplay.setPanel(document.getElementById('rp' + String(x)));
     if (!include[x].startName) {
-      window.alert("undefined-s");
+      console.log("undefined-s");
       include[x].startName = "Monument";
-      window.alert(include[x].startName);
+      console.log(include[x].startName);
     }
     if (!include[x].endName) {
-      window.alert("undefined-e");
+      console.log("undefined-e");
       include[x].endName = "Monument";
-      window.alert(include[x].endName);
+      console.log(include[x].endName);
     }
     var title = include[x].startName + " to " + include[x].endName;
     $("#rp" + String(x) + " p").html(title);
@@ -100,8 +88,6 @@ function sortAndUpdateRoutes(include) {
     calculateAndDisplayRoute(directionsService, directionsDisplay, start, end);
   }
   function calculateAndDisplayRoute(directionsService, directionsDisplay, start, end) {
-    //window.alert(start);
-    // window.alert(end);
     directionsService.route({
       origin: start,
       destination: end,
@@ -110,7 +96,10 @@ function sortAndUpdateRoutes(include) {
         if (status === 'OK') {
           directionsDisplay.setDirections(response);
         } else {
-          window.alert('Directions request failed due to ' + status);
+          if (stackSize < 3) {
+            setTimeout(calculateAndDisplayRoute(directionsService, directionsDisplay, start, end), 1000);
+            stackSize += 1;
+          }
         }
     });
   }

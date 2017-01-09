@@ -2,28 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-// .baltimore-map {
-// 	height: 400px;
-//     width: 800px;
-//     margin: auto;
-// }
-
-// .center-button {
-// 	background-color: white;
-// 	margin: 10px;
-// 	cursor: pointer;
-// 	padding: 10px;
-// 	&:hover {
-// 		background-color: #D3D3D3;
-// 	}
-// }
-
 body, html {
 	font-family: 'Roboto','sans-serif';
     margin: 0;
     padding: 0;
     width: 100%;
 }
+
+//Header
 
 #page-title {
 	font-family: 'Bungee Shade', cursive;
@@ -55,13 +41,14 @@ body, html {
     background-color: #d3d3d3;
 }
 
-// nav bar
-
 #header {
 	height: 260px;
 	padding: 0px 200px;
 	background-color: #d3d3d3;
 }
+
+// Nav bar
+
 .nav-bar {
 	margin-top: -60px;
 	position: relative;
@@ -116,7 +103,7 @@ body, html {
     margin-right: 20px;
 }
 
-//frames
+// Frames
 
 #loading {
     top: -60px;
@@ -180,38 +167,18 @@ body, html {
 
 }
 
-// .right-panel select, .right-panel input {
-// font-size: 15px;
-// }
-
-// .right-panel select {
-// width: 100%;
-// }
-
-// .right-panel i {
-// font-size: 12px;
-// }
-// .right-panel {
-// height: 100%;
-// float: right;
-// width: 390px;
-// overflow: auto;
-// }
-// .map {
-// margin-right: 400px;
-// }
-
 @media print {
-.map {
-  height: 500px;
-  margin: 0;
-}
-.right-panel {
-  float: none;
-  width: auto;
-}
+	.map {
+	  height: 500px;
+	  margin: 0;
+	}
+	.right-panel {
+	  float: none;
+	  width: auto;
+	}
 }
 
+// jQuery event
 .stop-scrolling {
   height: 100%;
   overflow: hidden;
