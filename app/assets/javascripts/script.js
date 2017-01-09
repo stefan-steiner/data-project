@@ -63,8 +63,6 @@ $(document).ready(function() {
       $(this).data("lastval",value);
         clearTimeout(timerid);
         timerid = setTimeout(function() {
-          window.alert("changed");
-          window.alert($("#searchInput").val());
           findDistances();
         },500);
     };

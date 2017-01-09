@@ -8,18 +8,18 @@ function initMap() {
 
   include = [];
   var includeAll = [];
-  window.alert("here1");
-  window.alert(routes.length);
+  // window.alert("here1");
+  // window.alert(routes.length);
 
   for (var r = 0; r < routes.length; r++) {
     if (routes[r].dist <= maxDist && routes[r].dist >= minDist) {
-      if (!$("#search input").val() || $("#search input").val().toLowerCase() == routes[r].startName.toLowerCase()) {
+     if (!$("#search input").val() || routes[r].startName.toLowerCase().includes($("#search input").val().toLowerCase())) {
         includeAll.push(routes[r]);
       }
     }
   }
 
-  window.alert(includeAll.length);
+  // window.alert(includeAll.length);
 
   if ($("#search input").val()) {
     $("#search input").val('');
@@ -69,7 +69,7 @@ function sortAndUpdateRoutes(include) {
 
   for (var x = 0; x < 9; x++) {
     document.getElementById('m' + String(x)).innerHTML = "";
-    document.getElementById('rp' + String(x)).innerHTML = "<h1></h1><h2></h2>";
+    document.getElementById('rp' + String(x)).innerHTML = "<p></p><h2></h2>";
   }
 
   for (var x = 0; x < include.length; x++) {
@@ -82,14 +82,18 @@ function sortAndUpdateRoutes(include) {
     directionsDisplay.setMap(map);
     // document.getElementById('rp' + String(x)).innerHTML = "";
     directionsDisplay.setPanel(document.getElementById('rp' + String(x)));
-    if (include[x].startName == 'undefined') {
+    if (!include[x].startName) {
+      window.alert("undefined-s");
       include[x].startName = "Monument";
+      window.alert(include[x].startName);
     }
-    if (include[x].endName == 'undefined') {
+    if (!include[x].endName) {
+      window.alert("undefined-e");
       include[x].endName = "Monument";
+      window.alert(include[x].endName);
     }
     var title = include[x].startName + " to " + include[x].endName;
-    $("#rp" + String(x) + " h1").html(title);
+    $("#rp" + String(x) + " p").html(title);
     $("#rp" + String(x) + " h2").html(String(include[x].dist) + " mi");
     var start = include[x].start;
     var end = include[x].end;

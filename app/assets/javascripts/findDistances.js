@@ -1,6 +1,6 @@
 function findDistances() {
   // pairs = gon.pairs; // all possible pairs of addresses
-  //window.alert("finddist");
+  window.alert("finddist");
   addresses = gon.addresses
   destinations = [];
   origins = [];
@@ -39,7 +39,7 @@ function findDistances() {
     //window.alert("City Hall" == "City Hall");
     for (var i = 0; i < addresses.length; i++) {
       var a = addresses[i];
-      if (a.name.toString().toLowerCase() == $("#search input").val().toString().toLowerCase()) {
+      if (a.name.toString().toLowerCase().includes($("#search input").val().toString().toLowerCase())) {
         //window.alert("found");
         //window.alert(a.name);
         origins.push(a.address);
@@ -89,6 +89,12 @@ function findDistances() {
               var from = origins[i];
               var to = destinations[j];
               var intDist = Number(distance.substring(0, distance.indexOf(" ")));
+              if (distance.split(" ")[1] == "ft") {
+                window.alert("ft");
+                intDist = intDist / 5280;
+                intDist = Math.round(intDist * 100) / 100
+                window.alert(intDist);
+              }
               var route = { start:origins[i], end:destinations[j], dist:intDist, startName:originNames[i], endName:destinationNames[j] };
               routes.push(route);
             } else {
